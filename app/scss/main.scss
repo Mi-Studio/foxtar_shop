@@ -8,7 +8,7 @@
 
 body {
     @include default-text(14px, 400);
-    background-color: $default-red;
+    background-color: $body-color;
     position: relative;
     font-family: $opensans;
 }
@@ -16,7 +16,7 @@ body {
 .header {
     @include default-text(12px, 700);
     display: flex;
-
+    
     &__logo {
         width: 600px / 900px * 100%;
     }
@@ -39,6 +39,7 @@ body {
 
 .about {
     @extend %default-section;
+    background-color: $color-header;
 }
 
 .contacts {
