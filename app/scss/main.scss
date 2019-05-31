@@ -8,7 +8,6 @@
 
 body {
     @include default-text(14px, 400);
-    background-color: $body-color;
     position: relative;
     font-family: $opensans;
 }
@@ -39,7 +38,7 @@ body {
 
 .about {
     @extend %default-section;
-    background-color: $color-header;
+    
 }
 
 .contacts {
