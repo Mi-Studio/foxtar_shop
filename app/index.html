@@ -1,34 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Foxtar</title>
-    <link rel="stylesheet" href="css/libs.min.css">
-    <link rel="stylesheet" href="sprite/sprite.css">
-    <link rel="stylesheet" href="css/main.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Foxtar</title>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="sprite/sprite.css">
+  <link rel="stylesheet" href="css/main.min.css">
 </head>
+
 <body>
 
-    <header class="header">
-        <a href="#" class="header__logo"> </a>
-            <nav class="menu header__menu">
-                <a href="" class="menu__item"></a>
-                <a href="" class="menu__item"></a>
-                <a href="" class="menu__item"></a>
-                <a href="" class="menu__item"></a>
-            </nav>
-    </header>
-    <section class="about">
+  <!-- /#header -->
 
-    </section>
-    <section class="contacts">
-        
-    </section>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/libs.min.js"></script>
-    <script src="js/main.js"></script>
+  <header>
+    <div class="header">
+      <div class="header__logo">
+        <a href="#">
+          <img src="img/logo.png" alt="">
+        </a>
+      </div>
+      <nav class="header__buttons">
+        <div class="header__info info">
+          <span class="info__help">Need help ? </span>
+          <span class="info__talk">Talk to an expert: +61 3 8376 6284</span>
+        </div>
+        <div class="header__basket">
+        <a href="#" ><img src="img/basket.png" alt="basket"></a>
+        </div>
+        <div>
+          <!-- Button trigger modal -->
+          <button type="button" class="header__button-login" data-toggle="modal" data-target="#exampleModal">
+            Login
+          </button>
+        </div>
+        <div class="header__register">
+          <button class="header__register-button">
+            Register
+          </button>
+        </div>
+      </nav>
+    </div>
+
+  </header>
+
+  <!-- /#header -->
+
+  <section class="about">
+
+  </section>
+  <section class="contacts">
+
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">LOGIN</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="modal-body">
+            <form action="#" class="modal__form">
+              <div class="modal-name"> <img src="/img/people.png" alt="">
+                <input class="modal-input" type="name" placeholder="Name">
+              </div>
+              <div class="modal-password"> <img src="/img/lock.png" alt="">
+                <input type="password" placeholder="Password">
+              </div>
+              <button type="submit" class="btn-submit">SUBMIT</button>
+              <button type="button" class="button-account"> <img class="modal-pencil" src="/img/pencil.png"
+                  alt="pencil">Create An account?</button>
+            </form>
+            <a href="#" class="lost-pass">Lost Password? </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
