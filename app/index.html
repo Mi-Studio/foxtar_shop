@@ -9,48 +9,46 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="sprite/sprite.css">
     <link rel="stylesheet" href="css/main.min.css">
-    
+
 </head>
 
 <body>
-
-    <section class="container container-menu menu">
-        <nav>
-            <a href="#" class="menu__item">Главная</a>
-            <a href="#" class="menu__item">Тренажеры</a>
-            <a href="#" class="menu__item">Туризм</a>
-            <a href="#" class="menu__item">Смарт-часы</a>
-            <a href="#" class="menu__item">Одежда</a>
-            <a href="#" class="menu__item">Детям</a>
-            <a href="#" class="menu__item">О магазине</a>
-            <a href="#" class="menu__item">Контакты</a>
-        </nav>
+    <section class="menu">
+        <div class="container">
+            <nav class="menu__list">
+                <a href="#" class="menu__item">Главная</a>
+                <a href="#" class="menu__item">Тренажеры</a>
+                <a href="#" class="menu__item">Туризм</a>
+                <a href="#" class="menu__item">Смарт-часы</a>
+                <a href="#" class="menu__item">Одежда</a>
+                <a href="#" class="menu__item">Детям</a>
+                <a href="#" class="menu__item">О магазине</a>
+                <a href="#" class="menu__item">Контакты</a>
+            </nav>
+        </div>
     </section>
 
 
     <div class="main">
 
         <section class="poster">
-
             <div class="poster__bg">
-
             </div>
-
             <div class="poster__mask">
-
             </div>
-
-            <div class="row">
-            <div class="poster__content col-sm">
-                <div class="poster__title">Магазин спортивных товаров Foxtar</div>
-                <div class="poster__description">
-                    <p>Воспользуйтесь поиском, чтобы найти необходимое...</p>
+            <div class="container">
+                <div class="row">
+                    <div class="poster__content col col-8">
+                        <div class="poster__title">Магазин спортивных товаров Foxtar</div>
+                        <div class="poster__description">
+                            <p>Воспользуйтесь поиском, чтобы найти необходимое...</p>
+                        </div>
+                        <form class="poster__form" action="" method="get">
+                            <input name="s" placeholder="Введите ключевые слова для поиска..." type="search">
+                            <button type="submit"></button>
+                        </form>
+                    </div>
                 </div>
-                <form class="poster__form" action="" method="get">
-                    <input name="s" placeholder="Введите ключевые слова для поиска..." type="search">
-                    <button type="submit"></button>
-                </form>
-            </div>
             </div>
         </section>
 
@@ -62,15 +60,14 @@
         <section class="contacts">
 
         </section>
+        
     </div>
 
 
-    <script src="https://kit.fontawesome.com/751ca44c72.js"></script>  <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/751ca44c72.js"></script> <!-- font awesome -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
 </html>
-
-

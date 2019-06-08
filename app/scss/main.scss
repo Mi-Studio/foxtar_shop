@@ -5,10 +5,6 @@
 @import "base/reset";
 @import "base/extensions";
 
-.container-menu {
-    padding: 0 170px;
-    margin: 0 auto;
-}
 
 .menu {
     max-width: 100%;
@@ -42,9 +38,9 @@
 // Poster Start
 
 .poster {
+    position: relative;
 
     &__bg {
-    position: relative;
     width: 100vw;
     height: 530px;
     background-image: url(../img/bg_poster.jpg);
@@ -54,15 +50,16 @@
     }
 
     &__mask {
-    background-image: -webkit-linear-gradient(top,rgba(0, 0, 0, 0.38) 0%,rgba(0, 0, 0, 0.74) 50%);
+    background-image: url(../img/bg_cover.png);
     position: absolute;
-    top: 60px;
+    top: 0;
     left: 0;
     width: 100vw;
-    height: 530px;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    opacity: 0.8;
     z-index: 0;
     }
 
