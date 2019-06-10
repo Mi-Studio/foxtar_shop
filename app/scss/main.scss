@@ -5,6 +5,7 @@
 @import "base/reset";
 @import "base/extensions";
 
+<<<<<<< HEAD
 .container-menu {
     padding: 0 170px;
     margin: 0 auto;
@@ -134,3 +135,171 @@
         }
 }
 
+=======
+/* trending products */
+.trending-products{
+    padding: 125px 0;
+
+    &__container-fluid {
+        padding: 0 15px;
+    }
+
+    &__title-blue {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        color: #263238;
+        margin-bottom: 30px;
+    }
+
+    &__product-container {
+        font-size: 0px;
+    }
+
+    &__product-card {
+        border: 1px solid lightgray;
+        width: 100%;
+        position: relative;
+    
+    }
+
+    &__shell {
+        width: calc(100%/4);
+        display: inline-block;
+        padding: 0px 15px;
+    }
+
+    &__triangle {
+        width: 0;
+        height: 0;
+        border-top: 40px solid #8bc34a; 
+        border-right: 40px solid transparent;
+        position: absolute;
+    }
+
+    &__light{
+        font-size: 15px;
+        color: #ffffff;
+        position: absolute;
+        padding-left: 10px;
+    }
+
+    &__product-card-body {
+        font-size: 15px;
+        font-weight: bold;
+        color: #263238;
+        background-color: #fff;
+    }
+
+    &__product-card-head {
+        height: 60%;
+    }
+
+    &__product-card-body {
+        height: 40%;
+    }
+
+    &__release-img {
+        size: 100%;;
+    }
+
+    &__sale {
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    &__product-description {
+        font-size: 12px;
+        color: #8bc34a
+    }
+
+    &__points {
+        border-top: 1px solid lightgray;
+        font-size: 12px;
+        display: flex;
+        padding: 10px 15px;
+    }
+
+    &__icon-stars {
+        color: #ffa726;
+    }
+
+    &__circle {
+        display: inline-block;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        background-color: lightgray;
+        margin-right: 5px;
+        text-align: center;
+        font-size: 11px;
+    }
+
+    &__stars {
+        float: right;
+    }
+
+    &__author {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.slick-dots {
+	position: absolute;
+	bottom: -50px;
+	left: 50%;
+	transform: translateX(-50%);
+	line-height: 0;
+}
+
+.slick-dots li {
+	display: inline-block;
+	vertical-align: center;
+	position: relative;
+	width: 14px;
+	height: 14px;
+}
+
+.slick-dots li button {
+	width: 7px;
+	height: 7px;
+	color: transparent;
+	font-size: 0;
+	background-color: #ccc;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.slick-dots li button::after {
+	content: '';
+	width: 9px;
+	height: 9px;
+	background-color: #8bc34a;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	box-sizing: border-box;
+}
+
+.slick-dots li.slick-active button::after {
+    opacity: 1;
+}
+/* tranding products end */
+>>>>>>> 8c49d129c34ea2a49bde65410061fc9eb1fec8f3
