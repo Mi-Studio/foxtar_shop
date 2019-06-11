@@ -1,47 +1,6 @@
-@import "node_modules/normalize.css/normalize";
 @import "base/variables";
 @import "base/components";
 @import "base/mixins";
 @import "base/fonts";
 @import "base/reset";
 @import "base/extensions";
-
-body {
-    @include default-text(14px, 400);
-    background-color: $body-color;
-    position: relative;
-    font-family: $opensans;
-}
-
-.header {
-    @include default-text(12px, 700);
-    display: flex;
-    
-    &__logo {
-        width: 600px / 900px * 100%;
-    }
-
-    ul {
-        font-size: 0;
-        letter-spacing: 0;
-
-        li {
-            display: inline-block;
-
-            a {
-                display: inline-block;
-                padding: 5px;
-            }
-        }
-       
-    }
-}
-
-.about {
-    @extend %default-section;
-    background-color: $color-header;
-}
-
-.contacts {
-    @extend %default-section;
-}
