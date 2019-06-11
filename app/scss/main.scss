@@ -139,7 +139,7 @@
     background-position: 50% 25%;
 } 
 
-.sidebar {
+.sidebarwidget {
     background-color: #fff;
     padding: 26px 31px 31px 28px;
     border: 1px solid #d7d7d7;
@@ -267,7 +267,7 @@ border-radius: 50%;
 
 .price-range__button::before {
     content: "\f002";
-    font-family: FontAwesome;
+    font-family: 'FontAwesome';
     font-size: 15px;
     color: #ffffff;
     margin-right: 9px;
