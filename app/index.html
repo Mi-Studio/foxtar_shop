@@ -15,22 +15,28 @@
 
   <!-- /#header -->
 
-  <header>
-    <div class="header">
+  <header class="header">
+    <div class="header__bg">
       <div class="header__logo">
         <a href="#">
-          <img src="img/logo.png" alt="">
+          <img class="logo-element" src="img/logo.png" alt="">
         </a>
       </div>
-      <nav class="header__buttons">
+      <div class="header__elements">
         <div class="header__info info">
           <span class="info__help">Need help ? </span>
           <span class="info__talk">Talk to an expert: +61 3 8376 6284</span>
         </div>
-        <div class="header__basket">
-        <a href="#" ><img src="img/basket.png" alt="basket"></a>
+        <div class="header__icons">
+          <div class="header__basket">
+            <button class="header__basket-button button">
+                <i class="fas fa-shopping-cart"></i>
+              <span class="button__counter-basket">8</span>
+            </button>
+          </div>
         </div>
-        <div>
+        <div class="header__button-group">
+          <div>
           <!-- Button trigger modal -->
           <button type="button" class="header__button-login" data-toggle="modal" data-target="#exampleModal">
             Login
@@ -41,7 +47,8 @@
             Register
           </button>
         </div>
-      </nav>
+      </div>
+      </div>
     </div>
 
   </header>
@@ -65,27 +72,26 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-          <div class="modal-body">
-            <form action="#" class="modal__form">
-              <div class="modal-name"> <img src="/img/people.png" alt="">
-                <input class="modal-input" type="name" placeholder="Name">
-              </div>
-              <div class="modal-password"> <img src="/img/lock.png" alt="">
-                <input type="password" placeholder="Password">
-              </div>
-              <button type="submit" class="btn-submit">SUBMIT</button>
-              <button type="button" class="button-account"> <img class="modal-pencil" src="/img/pencil.png"
-                  alt="pencil">Create An account?</button>
-            </form>
-            <a href="#" class="lost-pass">Lost Password? </a>
-          </div>
         </div>
+        <div class="modal-body">
+          <form action="#" class="modal__form">
+            <div class="modal-name"> <i class="fas fa-user"></i>
+              <input class="modal-input" type="name" placeholder="Name">
+            </div>
+            <div class="modal-password"> <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn-submit">SUBMIT</button>
+            <button type="button" class="button-account"> <i class="fas fa-edit"></i> Create An account?</button>
+          </form>
+          <a href="#" class="lost-pass">Lost Password? </a>
+      </div>
       </div>
     </div>
   </div>
+  <script src="https://kit.fontawesome.com/936a744753.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
 </body>
-
 </html>
