@@ -4,6 +4,7 @@
 @import "base/fonts";
 @import "base/reset";
 @import "base/extensions";
+@import "home/tutorials";
 
 
 .menu {
@@ -297,7 +298,7 @@ border-radius: 50%;
     &__card {
         width: calc(100%/3);
         display: inline-block;
-        text-align: center;
+        vertical-align: middle;
     }
 
     &__card-container {
