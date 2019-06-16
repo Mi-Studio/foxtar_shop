@@ -7,4 +7,6 @@ max: 600,
 prefix: "$"
 });
 
+$( '.product-tabs' ).tabs();
+
 });
