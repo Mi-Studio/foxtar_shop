@@ -15,18 +15,18 @@
 }
 
 .section-small {
-    padding: 120px 375px;
+    padding: 120px;
 }
 
 .title {
-    font-family: 'Roboto';
+    font-family: $roboto;
     font-weight: bold;
     font-size: 28px;
     color: #263238;
 } 
 
 .title-white {
-    font-family: 'Roboto';
+    font-family: $roboto;
     font-weight: bold;
     font-size: 28px;
     color: white;
@@ -34,7 +34,7 @@
 
 .btn {
 	display: inline-block;
-	font-family: 'Roboto', sans-serif;
+	font-family: $roboto;
 	line-height: 1;
 	
 }
