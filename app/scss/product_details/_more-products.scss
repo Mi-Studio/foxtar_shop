@@ -1,0 +1,45 @@
+.more-products {
+  margin: 120px 0;
+
+  &__title-box {
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    margin-bottom: 15px;
+
+  }
+
+  &__title {
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+.more-product-card {
+  height: 90px;
+  background-color: #fff;
+  padding: 0;
+  display: flex;
+
+
+  &__head {
+    width: 30%;
+    height: 90px;
+    background-color: grey;
+  }
+
+  &__body {
+    width: 70%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    margin: 0 auto;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 12px;
+  }
+}
