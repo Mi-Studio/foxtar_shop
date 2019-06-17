@@ -1,0 +1,69 @@
+// Plugin Ion Range Slider start
+
+.irs--flat .irs-line {
+    height: 5px;
+    background-color: #f2f5f8;
+}
+
+.irs--flat .irs-bar {
+    height: 5px;
+    background-color: #354750;
+}
+
+.irs--flat .irs-handle {
+top: 19px;
+width: 16px;
+height: 16px;
+border: 3px solid #8bc34a;
+background-color: #ffffff;
+border-radius: 50%;
+}
+
+.irs--flat .irs-handle>i:first-child {
+    background-color: transparent;
+}
+
+.irs--flat .irs-handle.state_hover>i:first-child, .irs--flat .irs-handle:hover>i:first-child {
+    background-color: transparent;
+}
+
+.irs--flat .irs-from:before, .irs--flat .irs-to:before, .irs--flat .irs-single:before {
+    display: none;
+}
+
+.irs-from, .irs-to, .irs-single {
+    top: 40px
+}
+
+.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    color: #78909c;
+    font-size: 15px;
+    font-weight: 400;  
+}
+.irs-min {
+    display: none;
+}
+
+.irs-max {
+    display: none;
+}
+// Plugin Ion Range Slider end
+
+
+.price-range__button {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 18px 18px;
+    background-color: #8bc34a;
+    margin-top: 26px;
+    width: 100%;
+ 
+    .fa-search {
+        margin-right: 9px;
+        color: #ffffff;
+    }
+}
