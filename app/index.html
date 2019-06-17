@@ -2,23 +2,65 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Foxtar</title>
-    <link rel="stylesheet" href="css/libs.min.css">
-    <link rel="stylesheet" href="sprite/sprite.css">
-    <link rel="stylesheet" href="css/main.min.css">
 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Foxtar</title>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="sprite/sprite.css">
+  <link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body>
+
+
+  <!-- /#header -->
+
+  <header class="header">
+    <div class="header__bg">
+      <div class="header__logo">
+        <a href="#">
+          <img class="logo-element" src="img/logo.png" alt="">
+        </a>
+      </div>
+      <div class="header__elements">
+        <div class="header__info info">
+          <span class="info__help">Need help ? </span>
+          <span class="info__talk">Talk to an expert: +61 3 8376 6284</span>
+        </div>
+        <div class="header__icons">
+          <div class="header__basket">
+            <button class="header__basket-button button">
+                <i class="fas fa-shopping-cart"></i>
+              <span class="button__counter-basket">8</span>
+            </button>
+          </div>
+        </div>
+        <div class="header__button-group">
+          <div>
+          <!-- Button trigger modal -->
+          <button type="button" class="header__button-login" data-toggle="modal" data-target="#exampleModal">
+            Login
+          </button>
+        </div>
+        <div class="header__register">
+          <button class="header__register-button">
+            Register
+          </button>
+        </div>
+      </div>
+      </div>
+    </div>
+  </header>
+  <!-- /#header -->
+
     <section class="menu">
         <div class="container">
             <nav class="menu__list">
                 <a href="#" class="menu__item">Главная</a>
                 <a href="#" class="menu__item">Тренажеры</a>
-                <a href="#" class="menu__item">Туризм</a>
+                <a href="/all-new-items.html" class="menu__item">Туризм</a>
                 <a href="#" class="menu__item">Смарт-часы</a>
                 <a href="#" class="menu__item">Одежда</a>
                 <a href="#" class="menu__item">Детям</a>
@@ -27,7 +69,6 @@
             </nav>
         </div>
     </section>
-
 
     <div class="main">
 
@@ -38,7 +79,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="poster__content col col-8">
+                    <div class="poster__content col col-9">
                         <div class="poster__title">Магазин спортивных товаров Foxtar</div>
                         <div class="poster__description">
                             <p>Воспользуйтесь поиском, чтобы найти необходимое...</p>
@@ -52,17 +93,83 @@
             </div>
         </section>
 
-        <section class="about">
-
+    <!-- section why choose start -->
+    <section class="why-you-choose">
+        <section class="why-you-choose__container">
+            <h1 class="why-you-choose__title">Why You Choose Foxtar Market Place</h1>
+            <div class="why-you-choose__card-container">
+                <div class="why-you-choose__card">
+                    <div class="why-you-choose__round-img">
+                        <img class="why-you-choose__cirkle" src="img/1.jpg" alt="">
+                    </div>
+                    <a>
+                        <div class="why-you-choose__card-text">
+                            Easily Buy & Sell
+                        </div>
+                    </a>
+                    <span class="why-you-choose__card-description">Dorem Ipsum is simply dummy text of the pring and typesetting
+                        industry. Lorem Ipsum has been the industry's
+                        standaum.
+                    </span>
+                </div>
+                <div class="why-you-choose__card">
+                    <div class="why-you-choose__round-img">
+                        <img class="why-you-choose__cirkle" src="img/2.jpg" alt="">
+                    </div>
+                    <div class="why-you-choose__card-text">
+                        Quality Products
+                    </div>
+                    <span class="why-you-choose__card-description">Dorem Ipsum is simply dummy text of the pring and typesetting
+                        industry. Lorem Ipsum has been the industry's
+                        standaum.
+                    </span>
+                </div>
+                <div class="why-you-choose__card">
+                    <div class="why-you-choose__round-img">
+                        <img class="why-you-choose__cirkle" src="img/3.jpg" alt="">
+                    </div>
+                    <div class="why-you-choose__card-text">
+                        100% Secure Paymant
+                    </div>
+                    <span class="why-you-choose__card-description">Dorem Ipsum is simply dummy text of the pring and typesetting
+                        industry. Lorem Ipsum has been the industry's
+                        standaum.
+                    </span>
+                </div>
+            </div>
         </section>
+    </section>
+    <!-- section why choose end -->
+</div>
 
-
-        <section class="contacts">
-
-        </section>
-        
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">LOGIN</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="#" class="modal__form">
+            <div class="modal-name"> <i class="fas fa-user"></i>
+              <input class="modal-input" type="name" placeholder="Name">
+            </div>
+            <div class="modal-password"> <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn-submit">SUBMIT</button>
+            <button type="button" class="button-account"> <i class="fas fa-edit"></i> Create An account?</button>
+          </form>
+          <a href="#" class="lost-pass">Lost Password? </a>
+      </div>
+      </div>
     </div>
-
+  </div>
+  <!-- Modal end -->
 
     <script src="https://kit.fontawesome.com/751ca44c72.js"></script> <!-- font awesome -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
