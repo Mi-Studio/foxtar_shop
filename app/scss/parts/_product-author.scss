@@ -1,0 +1,40 @@
+.product-author {
+
+    &__details {
+        margin-bottom: 24px;
+    }
+      
+
+    &__main {
+    display: flex;
+    justify-content: space-between;
+    }
+
+    &__img {
+    width: 82px;
+    height: 63px;
+    margin-right: 13px;
+    }
+
+    &__title {
+        font-family: 'Roboto', sans-serif;
+        color: #263238;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    &__button {
+        border: 1px solid #cccccc;
+        background-color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        color: #707070;
+        font-size: 13px;
+        padding: 8px 11px 10px;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+    }
+}
