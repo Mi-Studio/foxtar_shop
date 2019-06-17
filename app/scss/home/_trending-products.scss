@@ -68,7 +68,7 @@
 	box-sizing: border-box;
 }
 
-.slick-dots li.slick-active button::after {
-    opacity: 1;
+.slick-dots li.slick-active button {
+    background-color: $lightgreen;
 }
 /* tranding products end */
