@@ -1,0 +1,18 @@
+.categories {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #263238;
+
+    .fa-chevron-right {
+        font-size: 15px;
+        color: #8bc34a;
+        margin-right: 13px;
+    }
+
+    &__count {
+        color: #90a4ae;
+        text-align: right;
+    }
+}
