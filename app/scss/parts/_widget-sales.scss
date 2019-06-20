@@ -1,0 +1,33 @@
+// Widget Sales Start
+.sales {
+
+    &__details {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+
+        .fa-shopping-cart {
+        font-size: 19px;
+        color: #a6b5bb;
+        margin-right: 19px;
+        }
+    }
+
+    &__count {
+        font-family: 'Roboto', sans-serif;
+        color: #263238;
+        font-size: 20px;
+        font-weight: 700;
+        margin-right: 14px;
+        line-height: 25px;
+
+    }
+
+    &__description {
+        font-family: 'Roboto', sans-serif;
+        color: #707070;
+        font-size: 16px;
+        font-weight: 300;
+    }
+}  
+// Widget Sales End
