@@ -2,204 +2,310 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Foxtar</title>
-  <link rel="stylesheet" href="css/libs.min.css">
-  <link rel="stylesheet" href="sprite/sprite.css">
-  <link rel="stylesheet" href="css/main.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Foxtar</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="sprite/sprite.css">
+    <link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body>
 
-  <!-- /#header -->
-
-  <header class="header">
-    <div class="header__bg">
-      <div class="header__logo">
-        <a href="#">
-          <img class="logo-element" src="img/logo.png" alt="#">
-        </a>
-      </div>
-      <div class="header__elements">
-        <div class="header__info info">
-          <span class="info__help">Need help ? </span>
-          <span class="info__talk">Talk to an expert: <a>+61 3 8376 6284</a></span>
-        </div>
-        <div class="header__icons">
-          <div class="icons__bell">
-            <button class="icons__bell-button button">
-              <i class="far fa-bell"></i>
-              <span class="button__counter-bell">8</span>
-            </button>
-          </div>
-          <div class="icons__mail">
-            <button class="icons__mail-button button">
-              <i class="far fa-envelope"></i>
-              <span class="button__counter-mail">5</span>
-            </button>
-          </div>
-          <div class="icons__basket">
-            <button class="icons__basket-button button">
-              <i class="fas fa-shopping-cart"></i>
-              <span class="button__counter-basket">8</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="header__button-group">
-          <div class="dropdown">
-            <button class="header__avatar-button button"></button>
-            <button class="user-name" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">
-              Mike Hussy<i class="fas fa-angle-down"></i></span>
-              <span class="money-user">$171.00</span>
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#"><i class="fas fa-angle-right"></i>Profile Page</a>
-              <a class="dropdown-item" href="#"><i class="fas fa-angle-right"></i>Portfolio</a>
-              <a class="dropdown-item" href="#"><i class="fas fa-angle-right"></i>Account Setting</a>
-              <a class="dropdown-item" href="#"><i class="fas fa-angle-right"></i>Downloads</a>
-              <a class="dropdown-item" href="#"><i class="fas fa-angle-right"></i>Wishlist</a>
-              <a class="dropdown-item" href="#"><i class="fas fa-angle-right"></i>Upload Item</a>
-              <a class="dropdown-item" href="#"><i class="fas fa-angle-right"></i>Statement</a>
-              <a class="dropdown-item" href="#"><i class="fas fa-angle-right"></i>Withdraws</a>
-
-
+    <!-- /#header -->
+    <header class="header">
+        <div class="header__bg">
+            <div class="header__logo">
+                <a href="#">
+                    <img class="logo-element" src="img/logo.png" alt="#">
+                </a>
             </div>
-          </div>
-          <div class="header__register">
-            <button class="header__register-button">
-              Logout
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  <!-- /#header -->
-  
-
-
-  <div class="page-new-items">
-    <div class="container">
-      <div class="row">
-        <div class="col col-12">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item active" aria-current="page"><a href="#">Главная</a></li>
-              <li class="breadcrumb-item">Туризм</li>
-
-            </ol>
-          </nav>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col col-3">
-          <aside class="page-new-items__sidebar">
-            <section class="sidebarwidget categories">
-              <h2 class="sidebarwidget__title">
-                Категории
-              </h2>
-              <nav class="categories__nav">
-                <div class="row">
-                  <div class="col col-9">
-                    <i class="fas fa-chevron-right"></i>
-                    <a href="#" class="categories__item">
-                      Тренажеры
-                    </a>
-                  </div>
-                  <div class="categories__count col col-3">
-                    (150)
-                  </div>
-
-                  <div class="col col-9">
-                    <i class="fas fa-chevron-right"></i>
-                    <a href="#" class="categories__item">
-                      Туризм
-                    </a>
-                  </div>
-                  <div class="categories__count col col-3">
-                    (100)
-                  </div>
-
-                  <div class="col col-9">
-                    <i class="fas fa-chevron-right"></i>
-                    <a href="#" class="categories__item">
-                      Смарт-часы
-                    </a>
-                  </div>
-                  <div class="categories__count col col-3">
-                    (50)
-                  </div>
-
-                  <div class="col col-9">
-                    <i class="fas fa-chevron-right"></i>
-                    <a href="#" class="categories__item">
-                      Одежда
-                    </a>
-                  </div>
-                  <div class="categories__count col col-3">
-                    (60)
-                  </div>
-
-                  <div class="col col-9">
-                    <i class="fas fa-chevron-right"></i>
-                    <a href="#" class="categories__item">
-                      Детям
-                    </a>
-                  </div>
-                  <div class="categories__count col col-3">
-                    (40)
-                  </div>
-
+            <div class="header__elements">
+                <div class="header__info info">
+                    <span class="info__help">Need help ? </span>
+                    <span class="info__talk">Talk to an expert: <a>+61 3 8376 6284</a></span>
                 </div>
-              </nav>
-            </section>
-
-            <section class="sidebarwidget price-range">
-              <h2 class="sidebarwidget__title sidebarwidget__title_padding"> Сортировка по цене
-              </h2>
-              <input type="text" class="js-range-slider" name="my_range" value="" />
-              <button type="button" class="price-range__button"> <i class="fas fa-search"></i> Искать</button>
-            </section>
-
-            <section class="top-sellers">
-
-            </section>
-          </aside>
+                <div class="header__icons">
+                    <div class="header__bell bell">
+                        <div class="dropdown dropdown-menu-right">
+                            <button class="bell__bell-button button" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="far fa-bell"></i>
+                                <span class="bell__counter-bell">8</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                <div class="dropdown-block">
+                                    <div class="avatar-message"></div>
+                                    <div class="user-info">
+                                        <p class="help-message-bell">Need WP Help!</p>
+                                        <p class="date-bell">01 Dec, 2016</p>
+                                    </div>
+                                    <div class="icon-card-message">
+                                        <i class="far fa-bell"></i>
+                                    </div>
+                                </div>
+                                <div class="dropdown-block">
+                                    <div class="avatar-message"></div>
+                                    <div class="user-info">
+                                        <p class="help-message-bell">Need WP Help!</p>
+                                        <p class="date-bell">26 Nov, 2016</p>
+                                    </div>
+                                    <div class="icon-card-message">
+                                        <i class="far fa-bell"></i>
+                                    </div>
+                                </div>
+                                <div class="dropdown-block">
+                                    <div class="avatar-message"></div>
+                                    <div class="user-info">
+                                        <p class="help-message-bell">Psd Template Help!</p>
+                                        <p class="date-bell">26 Nov, 2016</p>
+                                    </div>
+                                    <div class="icon-card-message">
+                                        <i class="far fa-bell"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__mail mail">
+                        <div class="dropdown dropdown-menu-right">
+                            <button class="mail__mail-button button" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="far fa-envelope"></i>
+                                <span class="mail__counter-mail">5</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                <div class="dropdown-block">
+                                    <div class="avatar-message"></div>
+                                    <div class="user-info">
+                                        <p class="nick-name">Kazi Fahim</p>
+                                        <p class="help-message">Need WP Help!</p>
+                                        <p class="date">01 Dec, 2016</p>
+                                    </div>
+                                    <div class="icon-card-message">
+                                        <i class="far fa-envelope"></i>
+                                    </div>
+                                </div>
+                                <div class="dropdown-block">
+                                    <div class="avatar-message"></div>
+                                    <div class="user-info">
+                                        <p class="nick-name">Richi Lenal</p>
+                                        <p class="help-message">Need WP Help!</p>
+                                        <p class="date">26 Nov, 2016</p>
+                                    </div>
+                                    <div class="icon-card-message">
+                                        <i class="far fa-envelope"></i>
+                                    </div>
+                                </div>
+                                <div class="dropdown-block">
+                                    <div class="avatar-message"></div>
+                                    <div class="user-info">
+                                        <p class="nick-name">PsdBosS</p>
+                                        <p class="help-message">Psd Template Help!</p>
+                                        <p class="date">26 Nov, 2016</p>
+                                    </div>
+                                    <div class="icon-card-message">
+                                        <i class="fas fa-reply"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__basket basket">
+                        <div class="dropdown">
+                            <button class="basket__basket-button button" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="basket__counter-basket">8</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                <div class="card-section">
+                                    <div class="square"></div>
+                                    <div class="card-text">
+                                        <p class="product">Grand Ballet</p>
+                                        <p class="description">Word Press</p>
+                                        <p class="price">$59</p>
+                                    </div>
+                                </div>
+                                <div class="card-section">
+                                    <div class="square"></div>
+                                    <div class="card-text">
+                                        <p class="product">Apple Device</p>
+                                        <p class="description">Word Press</p>
+                                        <p class="price">$59</p>
+                                    </div>
+                                </div>
+                                <div class="card-section-total">
+                                    <div class="card-text-total">
+                                        <span class="total">Total</span>
+                                        <span>$118</span>
+                                    </div>
+                                    <div class="dropdown-button">
+                                        <button type="button" class="header__button-card">
+                                            Go To Card
+                                        </button>
+                                        <button class="header__button-checkout">
+                                            Go To Checkout
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__button-group">
+                    <div class="dropdown">
+                        <button class="header__avatar-button button"></button>
+                        <button class="user-name" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Mike Hussy<i class="fas fa-angle-down"></i></span>
+                            <span class="money-user">$171.00</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#"><i class="fas fa-angle-right"></i>Profile Page</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-angle-right"></i>Portfolio</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-angle-right"></i>Account Setting</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-angle-right"></i>Downloads</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-angle-right"></i>Wishlist</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-angle-right"></i>Upload Item</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-angle-right"></i>Statement</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-angle-right"></i>Withdraws</a>
+                        </div>
+                    </div>
+                    <div class="header__register">
+                        <button class="header__register-button">
+                            Logout
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col col-9">
-          <div class="container-fluid">
-            <div class="row sort">
+    </header>
+    <!-- /#header -->
 
-            </div>
-            <div class="row main">
-              <div class="col col-4"> </div>
-              <div class="col col-4"> </div>
-              <div class="col col-4"> </div>
-              <div class="col col-4"> </div>
-              <div class="col col-4"> </div>
-              <div class="col col-4"> </div>
-              <div class="col col-4"> </div>
-              <div class="col col-4"> </div>
-              <div class="col col-4"> </div>
-            </div>
-            <div class="row navigation">
+    <div class="page-new-items">
+        <div class="container">
+            <div class="row">
+                <div class="col col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page"><a href="#">Главная</a></li>
+                            <li class="breadcrumb-item">Туризм</li>
 
+                        </ol>
+                    </nav>
+                </div>
             </div>
-          </div>
+            <div class="row">
+                <div class="col col-3">
+                    <aside class="page-new-items__sidebar">
+                        <section class="sidebarwidget categories">
+                            <h2 class="sidebarwidget__title">
+                                Категории
+                            </h2>
+                            <nav class="categories__nav">
+                                <div class="row">
+                                    <div class="col col-9">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <a href="#" class="categories__item">
+                                            Тренажеры
+                                        </a>
+                                    </div>
+                                    <div class="categories__count col col-3">
+                                        (150)
+                                    </div>
+
+                                    <div class="col col-9">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <a href="#" class="categories__item">
+                                            Туризм
+                                        </a>
+                                    </div>
+                                    <div class="categories__count col col-3">
+                                        (100)
+                                    </div>
+
+                                    <div class="col col-9">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <a href="#" class="categories__item">
+                                            Смарт-часы
+                                        </a>
+                                    </div>
+                                    <div class="categories__count col col-3">
+                                        (50)
+                                    </div>
+
+                                    <div class="col col-9">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <a href="#" class="categories__item">
+                                            Одежда
+                                        </a>
+                                    </div>
+                                    <div class="categories__count col col-3">
+                                        (60)
+                                    </div>
+
+                                    <div class="col col-9">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <a href="#" class="categories__item">
+                                            Детям
+                                        </a>
+                                    </div>
+                                    <div class="categories__count col col-3">
+                                        (40)
+                                    </div>
+
+                                </div>
+                            </nav>
+                        </section>
+
+                        <section class="sidebarwidget price-range">
+                            <h2 class="sidebarwidget__title sidebarwidget__title_padding"> Сортировка по цене
+                            </h2>
+                            <input type="text" class="js-range-slider" name="my_range" value="" />
+                            <button type="button" class="price-range__button"> <i class="fas fa-search"></i>
+                                Искать</button>
+                        </section>
+
+                        <section class="top-sellers">
+
+                        </section>
+                    </aside>
+                </div>
+                <div class="col col-9">
+                    <div class="container-fluid">
+                        <div class="row sort">
+
+                        </div>
+                        <div class="row main">
+                            <div class="col col-4"> </div>
+                            <div class="col col-4"> </div>
+                            <div class="col col-4"> </div>
+                            <div class="col col-4"> </div>
+                            <div class="col col-4"> </div>
+                            <div class="col col-4"> </div>
+                            <div class="col col-4"> </div>
+                            <div class="col col-4"> </div>
+                            <div class="col col-4"> </div>
+                        </div>
+                        <div class="row navigation">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
 
 
-        <script src="https://kit.fontawesome.com/936a744753.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-        </script>
-        <script src="js/libs.min.js"></script>
-        <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/936a744753.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
