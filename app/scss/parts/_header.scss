@@ -17,6 +17,7 @@
         width: 72px;
         height: 32px;
         color: white;
+        background-color: $lightgreen;
         }
 
         &__register-button {
@@ -25,6 +26,7 @@
         width: 72px;
         height: 32px;
         color: white;
+        background-color: $red;
         }
 
     &__elements {
@@ -56,18 +58,6 @@
         }
     }
 
-    &__button-login {
-        background-color: $lightgreen;
-    }
-
-    &__register {
-        
-    }
-
-    &__register-button {
-        background-color: $red;
-    }
-
     .info {
     
         &__talk {
@@ -87,55 +77,61 @@
         width: 40px;
         height: 40px;
         color: #a0a0a0;
+        padding: 0px;
 
-        &__counter-bell {
-            position: absolute;
-            top: -6px;
-            right: -5px;
-            font-size: 11px;
-            background-color: #fcb322;
-            border-radius: 50%;
-            width: 18px;
-            height: 18px;
-            text-align: center;
-            line-height: 14px;
-            color: #fff;
-        }
-
-        &__counter-mail {
-            position: absolute;
-            top: -6px;
-            right: -5px;
-            font-size: 11px;
-            background-color: #ef6c00;
-            border-radius: 50%;
-            width: 18px;
-            height: 18px;
-            text-align: center;
-            line-height: 14px;
-            color: #fff;
-        }
-
-        &__counter-basket {
-            position: absolute;
-            top: -6px;
-            right: -5px;
-            font-size: 11px;
-            background-color: #95c85a;
-            border-radius: 50%;
-            width: 18px;
-            height: 18px;
-            text-align: center;
-            line-height: 14px;
-            color: #fff;
-        }
     }
 }
+
+
+.bell__counter-bell {
+    position: absolute;
+    top: -6px;
+    right: -5px;
+    font-size: 11px;
+    background-color: #fcb322;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 14px;
+    color: #fff;
+}
+
+.mail__counter-mail {
+    position: absolute;
+    top: -6px;
+    right: -5px;
+    font-size: 11px;
+    background-color: #ef6c00;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 14px;
+    color: #fff;
+}
+
+
+.basket__counter-basket {
+    position: absolute;
+    top: -6px;
+    right: -5px;
+    font-size: 11px;
+    background-color: #95c85a;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 14px;
+    color: #fff;
+}
+
 
 /* ========== Header end ========== */
 
 
 /* ========== Modal start ========== */
+
 
 .modal-header {
     display: block;
@@ -158,7 +154,6 @@
 
 h5 {
     color: #ffffff;
-    font-family: Roboto;
     font-size: 48px;
     font-weight: 700;
     line-height: 36px;
@@ -174,7 +169,6 @@ h5 {
 }
 
 .modal-body {
-    margin-top: 42px;
     text-align: -webkit-center;
 }
 
@@ -247,24 +241,126 @@ input {
     color: #ffffff;
 }
 
+
 /* ========== Modal end ========== */
 
 
 /* ========== Drop down start ========== */
 
 
-.dropdown-menu {
-    transform: translate3d(0px, 78px, 0px) !important;
+
+.dropdown-item {
+    color: #546e7a;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-left: 0px;
+    padding: 0rem 1.5rem;
+    font-size: 13px;
+}
+
+.header__button-card {
+    border: none;
+    width: 105px;
+    height: 35px;
+    color: white;
+    background-color: $lightgreen;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.header__button-checkout {
+    border: none;
+    width: 123px;
+    height: 35px;
+    color: white;
+    background-color: $red;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.header__button-group>.dropdown>.dropdown-menu {
+    transform: translate3d(0px, 78px, 0px);
     width: 158px;
     height: 317px;
     box-shadow: 0 16px 20px rgba(216, 216, 216, 0.75);
     border: 1px solid #cccccc;
     background-color: #ffffff;
     vertical-align: middle;
+    margin: 31px 0px 0px -38px;
+}
+
+.header__icons>.header__basket>.dropdown>.dropdown-menu {
+    width: 268px;
+    height: 299px;
+    box-shadow: 0 16px 20px rgba(216, 216, 216, 0.75);
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    vertical-align: middle;
+    margin-top: 40px;
+}
+
+.header__icons>.header__mail>.dropdown>.dropdown-menu {
+    width: 268px;
+    height: 280px;
+    box-shadow: 0 16px 20px rgba(216, 216, 216, 0.75);
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    vertical-align: middle;
+    margin-top: 40px;
+    padding: 0rem 0;
+}
+
+.header__icons>.header__bell>.dropdown>.dropdown-menu {
+    width: 268px;
+    height: 280px;
+    box-shadow: 0 16px 20px rgba(216, 216, 216, 0.75);
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    vertical-align: middle;
+    margin-top: 40px;
+    padding: 0rem 0;
+}
+
+.square {
+    width: 73px;
+    height: 57px;
+    background-color: #d4d4d4;
+    margin: 12px 23px 1px 23px;
+}
+
+.card-section {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+}
+
+.total {
+    padding-right: 83px;
 }
 
 .dropdown {
     display: flex;
+}
+
+.card-text {
+    padding: 8px 0 0 0px;
+}
+
+.card-text-total {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0px 17px 0px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.dropdown-button {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 11px;
+    padding-right: 11px;
 }
 
 .user-name {
@@ -274,36 +370,120 @@ input {
 .money-user {
     display: flex;
     color: #8bc34a;
-    font-family: Roboto;
     font-size: 17px;
     font-weight: 700;
     line-height: 24px;
 }
 
-
-.dropdown-item {
-    color: #546e7a;
-    font-family: Roboto;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 36px;
-    margin-left: 0px;
-    padding: 0rem 1.5rem;
-    font-size: 13px;
-}
-
 .fa-angle-down {
     margin-left: 11px;
+    color: #707070;
 }
 
 .modal__form>div>i {
     color: #fff;
-
 }
+
+.dropdown.show>.bell__bell-button {
+    color: #000000;
+}
+
+.dropdown.show>.mail__mail-button {
+    color: #000000;
+}
+
+.dropdown.show>.basket__basket-button {
+    color: #000000;
+}
+
+
 .dropdown-item>.fas {
     margin-right: 8px;
     color: $lightgreen;
     font-size: 14px;
 }
+
+.product {
+    color: #263238;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.description {
+    color: #84b743;
+    font-size: 12px;
+    font-weight: 400;
+
+}
+
+.price {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.icon-card-message:hover {
+    color:#ef6c00;
+}
+
+.icon-card-message {
+    color: #b0bec5;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px 0px 0px 0px;
+}
+
+.help-message {
+    color: #84b743;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.nick-name {
+    color: #263238;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.date {
+    color: #707070;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.user-info {
+    width: 105px;
+    height: 92px;
+    margin: 20px 0px 0px 0px;
+}
+
+.avatar-message {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #d4d4d4;
+    margin: 20px 0px 0px 0px;
+}
+
+.dropdown-block {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #e0e0e0;
+    height: calc(100% / 3);
+}
+
+
+.help-message-bell {
+    color: #84b743;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.date-bell {
+    color: #707070;
+    font-size: 10px;
+}
+
 
 /* ========== Drop down end ========== */

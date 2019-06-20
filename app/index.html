@@ -27,11 +27,46 @@
                     <span class="info__talk">Talk to an expert: +61 3 8376 6284</span>
                 </div>
                 <div class="header__icons">
-                    <div class="header__basket">
-                        <button class="header__basket-button button">
-                            <i class="fas fa-shopping-cart"></i>
-                            <span class="button__counter-basket">8</span>
-                        </button>
+                    <div class="header__basket basket">
+                        <div class="dropdown dropdown-menu-right">
+                            <button class="basket__basket-button button" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="basket__counter-basket">8</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                <div class="card-section">
+                                    <div class="square"></div>
+                                    <div class="card-text">
+                                        <p class="product">Grand Ballet</p>
+                                        <p class="description">Word Press</p>
+                                        <p class="price">$59</p>
+                                    </div>
+                                </div>
+                                <div class="card-section">
+                                    <div class="square"></div>
+                                    <div class="card-text">
+                                        <p class="product">Apple Device</p>
+                                        <p class="description">Word Press</p>
+                                        <p class="price">$59</p>
+                                    </div>
+                                </div>
+                                <div class="card-section-total">
+                                    <div class="card-text-total">
+                                        <span class="total">Total</span>
+                                        <span>$118</span>
+                                    </div>
+                                    <div class="dropdown-button">
+                                        <button type="button" class="header__button-card">
+                                            Go To Card
+                                        </button>
+                                        <button class="header__button-checkout">
+                                            Go To Checkout
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="header__button-group">
@@ -53,24 +88,8 @@
     </header>
     <!-- /#header -->
 
-    <section class="menu">
-        <div class="container">
-            <nav class="menu__list">
-                <a href="#" class="menu__item">Главная</a>
-                <a href="#" class="menu__item">Тренажеры</a>
-                <a href="/all-new-items.html" class="menu__item">Туризм</a>
-                <a href="#" class="menu__item">Смарт-часы</a>
-                <a href="#" class="menu__item">Одежда</a>
-                <a href="#" class="menu__item">Детям</a>
-                <a href="#" class="menu__item">О магазине</a>
-                <a href="#" class="menu__item">Контакты</a>
-            </nav>
-        </div>
-    </section>
-
     <!-- main start -->
     <div class="main">
-
         <section class="poster">
             <div class="poster__bg">
             </div>
@@ -92,723 +111,724 @@
             </div>
         </section>
 
-    <!-- section why choose start -->
-    <section class="why-you-choose">
-        <div class="why-you-choose__container">
-            <h3 class="why-you-choose__title">Why You Choose Foxtar Market Place</h3>
-            <div class="why-you-choose__card-container">
-                <div class="why-you-choose__why-choose-card why-choose-card">
-                    <div class="why-choose-card__round-img">
-                        <img class="why-choose-card__cirkle" src="img/1.jpg" alt="">
-                    </div>
-                    <a class="why-choose-card__card-text" href="#">
+        <!-- section why choose start -->
+        <section class="why-you-choose">
+            <div class="why-you-choose__container">
+                <h3 class="why-you-choose__title">Why You Choose Foxtar Market Place</h3>
+                <div class="why-you-choose__card-container">
+                    <div class="why-you-choose__why-choose-card why-choose-card">
+                        <div class="why-choose-card__round-img">
+                            <img class="why-choose-card__cirkle" src="img/1.jpg" alt="">
+                        </div>
+                        <a class="why-choose-card__card-text" href="#">
                             Easily Buy & Sell
-                    </a>
-                    <span class="why-choose-card__card-description">Dorem Ipsum is simply dummy text of the pring and typesetting
-                        industry. Lorem Ipsum has been the industry's
-                        standaum.
-                    </span>
-                </div>
-                <div class="why-you-choose__why-choose-card why-choose-card">
-                    <div class="why-choose-card__round-img">
-                        <img class="why-choose-card__cirkle" src="img/2.jpg" alt="">
+                        </a>
+                        <span class="why-choose-card__card-description">Dorem Ipsum is simply dummy text of the pring
+                            and typesetting
+                            industry. Lorem Ipsum has been the industry's
+                            standaum.
+                        </span>
                     </div>
-                    <a 
-                    href="#" class="why-choose-card__card-text">
-                        Quality Products
-                    </a>
-                    <span class="why-choose-card__card-description">Dorem Ipsum is simply dummy text of the pring and typesetting
-                        industry. Lorem Ipsum has been the industry's
-                        standaum.
-                    </span>
-                </div>
-                <div class="why-you-choose__why-choose-card why-choose-card">
-                    <div class="why-choose-card__round-img">
-                        <img class="why-choose-card__cirkle" src="img/3.jpg" alt="">
+                    <div class="why-you-choose__why-choose-card why-choose-card">
+                        <div class="why-choose-card__round-img">
+                            <img class="why-choose-card__cirkle" src="img/2.jpg" alt="">
+                        </div>
+                        <a href="#" class="why-choose-card__card-text">
+                            Quality Products
+                        </a>
+                        <span class="why-choose-card__card-description">Dorem Ipsum is simply dummy text of the pring
+                            and typesetting
+                            industry. Lorem Ipsum has been the industry's
+                            standaum.
+                        </span>
                     </div>
-                    <a href="#" class="why-choose-card__card-text">
-                        100% Secure Paymant
-                    </a>
-                    <span class="why-choose-card__card-description">Dorem Ipsum is simply dummy text of the pring and typesetting
-                        industry. Lorem Ipsum has been the industry's
-                        standaum.
-                    </span>
+                    <div class="why-you-choose__why-choose-card why-choose-card">
+                        <div class="why-choose-card__round-img">
+                            <img class="why-choose-card__cirkle" src="img/3.jpg" alt="">
+                        </div>
+                        <a href="#" class="why-choose-card__card-text">
+                            100% Secure Paymant
+                        </a>
+                        <span class="why-choose-card__card-description">Dorem Ipsum is simply dummy text of the pring
+                            and typesetting
+                            industry. Lorem Ipsum has been the industry's
+                            standaum.
+                        </span>
                     </div>
                 </div>
             </div>
         </section>
         <!-- section why choose end -->
 
-    <!-- section trending products -->
-    <section class="trending-products">
-        <div class="trending-products__container-fluid">
-            <h1 class=" trending-products__title-blue">
-                This Week Trending Products
-            </h1>
-            <div class="trending-products__product-container">
-                <div class="trending-products__shell">
-                    <div class="trending-products__product-card product-card">
-                        <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon">
-                                <div class="product-card__triangle">
-                                </div>
-                                <div class="product-card__light">
-                                    <i class="fa fa-bolt" aria-hidden="true"></i>
-                                </div>
-                            </label>
-                            <img class="product-card__release-img" src="img/4.jpg" alt="">
-                        </div>
-                        <div class="product-card__product-card-body">
-                            <div class="product-card__sale">
-                                <div class="product-card__text">
-                                    <span class="product-card__name">Responcive Template</span>
-                                    <span class="product-card__product-description">Site Template</span>
-                                </div>
-                                <div class="product-card__price">
-                                    <span>19$</span>
-                                </div>
-                            </div>
-                            <div class="product-card__points">
-                                <div class="product-card__author">
-                                    <div class="product-card__circle">
-                                        1
+        <!-- section trending products -->
+        <section class="trending-products">
+            <div class="trending-products__container-fluid">
+                <h1 class=" trending-products__title-blue">
+                    This Week Trending Products
+                </h1>
+                <div class="trending-products__product-container">
+                    <div class="trending-products__shell">
+                        <div class="trending-products__product-card product-card">
+                            <div class="product-card__product-card-head">
+                                <label for="#" class="product-card__triangle-icon">
+                                    <div class="product-card__triangle">
                                     </div>
-                                    <span>Radiustheme</span>
+                                    <div class="product-card__light">
+                                        <i class="fa fa-bolt" aria-hidden="true"></i>
+                                    </div>
+                                </label>
+                                <img class="product-card__release-img" src="img/4.jpg" alt="">
+                            </div>
+                            <div class="product-card__product-card-body">
+                                <div class="product-card__sale">
+                                    <div class="product-card__text">
+                                        <span class="product-card__name">Responcive Template</span>
+                                        <span class="product-card__product-description">Site Template</span>
+                                    </div>
+                                    <div class="product-card__price">
+                                        <span>19$</span>
+                                    </div>
                                 </div>
-                                <div class="product-card__stars">
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <span>(05)</span>
+                                <div class="product-card__points">
+                                    <div class="product-card__author">
+                                        <div class="product-card__circle">
+                                            1
+                                        </div>
+                                        <span>Radiustheme</span>
+                                    </div>
+                                    <div class="product-card__stars">
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <span>(05)</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="trending-products__shell">
-                    <div class="trending-products__product-card product-card">
-                        <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon">
-                                <div class="product-card__triangle">
-                                </div>
-                                <div class="product-card__light">
-                                    <i class="fa fa-bolt" aria-hidden="true"></i>
-                                </div>
-                            </label>
-                            <img class="product-card__release-img" src="img/5.jpg" alt="">
-                        </div>
-                        <div class="product-card__product-card-body">
-                            <div class="product-card__sale">
-                                <div class="product-card__text">
-                                    <span class="product-card__name">The Post Grid Pro</span>
-                                    <span class="product-card__product-description">WordPress Plugin</span>
-                                </div>
-                                <div class="product-card__price">
-                                    <span>15$</span>
-                                </div>
-                            </div>
-                            <div class="product-card__points">
-                                <div class="product-card__author">
-                                    <div class="product-card__circle">
-                                        2
+                    <div class="trending-products__shell">
+                        <div class="trending-products__product-card product-card">
+                            <div class="product-card__product-card-head">
+                                <label for="#" class="product-card__triangle-icon">
+                                    <div class="product-card__triangle">
                                     </div>
-                                    <span>PsdBosS</span>
+                                    <div class="product-card__light">
+                                        <i class="fa fa-bolt" aria-hidden="true"></i>
+                                    </div>
+                                </label>
+                                <img class="product-card__release-img" src="img/5.jpg" alt="">
+                            </div>
+                            <div class="product-card__product-card-body">
+                                <div class="product-card__sale">
+                                    <div class="product-card__text">
+                                        <span class="product-card__name">The Post Grid Pro</span>
+                                        <span class="product-card__product-description">WordPress Plugin</span>
+                                    </div>
+                                    <div class="product-card__price">
+                                        <span>15$</span>
+                                    </div>
                                 </div>
-                                <div class="product-card__stars">
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <span>(05)</span>
+                                <div class="product-card__points">
+                                    <div class="product-card__author">
+                                        <div class="product-card__circle">
+                                            2
+                                        </div>
+                                        <span>PsdBosS</span>
+                                    </div>
+                                    <div class="product-card__stars">
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <span>(05)</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="trending-products__shell">
-                    <div class="trending-products__product-card product-card">
-                        <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon">
-                                <div class="product-card__triangle">
-                                </div>
-                                <div class="product-card__light">
-                                    <i class="fa fa-bolt" aria-hidden="true"></i>
-                                </div>
-                            </label>
-                            <img class="product-card__release-img" src="img/6.jpg" alt="">
-                        </div>
-                        <div class="product-card__product-card-body">
-                            <div class="product-card__sale">
-                                <div class="product-card__text">
-                                    <span class="product-card__name">Logo Showcae</span>
-                                    <span class="product-card__product-description">Joomla Component</span>
-                                </div>
-                                <div class="product-card__price">
-                                    <span>20$</span>
-                                </div>
-                            </div>
-                            <div class="product-card__points">
-                                <div class="product-card__author">
-                                    <div class="product-card__circle">
-                                        3
+                    <div class="trending-products__shell">
+                        <div class="trending-products__product-card product-card">
+                            <div class="product-card__product-card-head">
+                                <label for="#" class="product-card__triangle-icon">
+                                    <div class="product-card__triangle">
                                     </div>
-                                    <span>Manilip</span>
+                                    <div class="product-card__light">
+                                        <i class="fa fa-bolt" aria-hidden="true"></i>
+                                    </div>
+                                </label>
+                                <img class="product-card__release-img" src="img/6.jpg" alt="">
+                            </div>
+                            <div class="product-card__product-card-body">
+                                <div class="product-card__sale">
+                                    <div class="product-card__text">
+                                        <span class="product-card__name">Logo Showcae</span>
+                                        <span class="product-card__product-description">Joomla Component</span>
+                                    </div>
+                                    <div class="product-card__price">
+                                        <span>20$</span>
+                                    </div>
                                 </div>
-                                <div class="product-card__stars">
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <span>(05)</span>
+                                <div class="product-card__points">
+                                    <div class="product-card__author">
+                                        <div class="product-card__circle">
+                                            3
+                                        </div>
+                                        <span>Manilip</span>
+                                    </div>
+                                    <div class="product-card__stars">
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <span>(05)</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="trending-products__shell">
-                    <div class="trending-products__product-card product-card">
-                        <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon">
-                                <div class="product-card__triangle">
-                                </div>
-                                <div class="product-card__light">
-                                    <i class="fa fa-bolt" aria-hidden="true"></i>
-                                </div>
-                            </label>
-                            <img class="product-card__release-img" src="img/7.jpg" alt="">
-                        </div>
-                        <div class="product-card__product-card-body">
-                            <div class="product-card__sale">
-                                <div class="product-card__text">
-                                    <span class="product-card__name">UI Design</span>
-                                    <span class="product-card__product-description">Psd Template</span>
-                                </div>
-                                <div class="product-card__price">
-                                    <span>12$</span>
-                                </div>
-                            </div>
-                            <div class="product-card__points">
-                                <div class="product-card__author">
-                                    <div class="product-card__circle">
-                                        4
+                    <div class="trending-products__shell">
+                        <div class="trending-products__product-card product-card">
+                            <div class="product-card__product-card-head">
+                                <label for="#" class="product-card__triangle-icon">
+                                    <div class="product-card__triangle">
                                     </div>
-                                    <span>Lolypop</span>
+                                    <div class="product-card__light">
+                                        <i class="fa fa-bolt" aria-hidden="true"></i>
+                                    </div>
+                                </label>
+                                <img class="product-card__release-img" src="img/7.jpg" alt="">
+                            </div>
+                            <div class="product-card__product-card-body">
+                                <div class="product-card__sale">
+                                    <div class="product-card__text">
+                                        <span class="product-card__name">UI Design</span>
+                                        <span class="product-card__product-description">Psd Template</span>
+                                    </div>
+                                    <div class="product-card__price">
+                                        <span>12$</span>
+                                    </div>
                                 </div>
-                                <div class="product-card__stars">
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <span>(05)</span>
+                                <div class="product-card__points">
+                                    <div class="product-card__author">
+                                        <div class="product-card__circle">
+                                            4
+                                        </div>
+                                        <span>Lolypop</span>
+                                    </div>
+                                    <div class="product-card__stars">
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <span>(05)</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="trending-products__shell">
-                    <div class="trending-products__product-card product-card">
-                        <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon">
-                                <div class="product-card__triangle">
-                                </div>
-                                <div class="product-card__light">
-                                    <i class="fa fa-bolt" aria-hidden="true"></i>
-                                </div>
-                            </label>
-                            <img class="product-card__release-img" src="img/4.jpg" alt="">
-                        </div>
-                        <div class="product-card__product-card-body">
-                            <div class="product-card__sale">
-                                <div class="product-card__text">
-                                    <span class="product-card__name">Responcive Template</span>
-                                    <span class="product-card__product-description">Site Template</span>
-                                </div>
-                                <div class="product-card__price">
-                                    <span>19$</span>
-                                </div>
-                            </div>
-                            <div class="product-card__points">
-                                <div class="product-card__author">
-                                    <div class="product-card__circle">
-                                        5
+                    <div class="trending-products__shell">
+                        <div class="trending-products__product-card product-card">
+                            <div class="product-card__product-card-head">
+                                <label for="#" class="product-card__triangle-icon">
+                                    <div class="product-card__triangle">
                                     </div>
-                                    <span>Radiustheme</span>
+                                    <div class="product-card__light">
+                                        <i class="fa fa-bolt" aria-hidden="true"></i>
+                                    </div>
+                                </label>
+                                <img class="product-card__release-img" src="img/4.jpg" alt="">
+                            </div>
+                            <div class="product-card__product-card-body">
+                                <div class="product-card__sale">
+                                    <div class="product-card__text">
+                                        <span class="product-card__name">Responcive Template</span>
+                                        <span class="product-card__product-description">Site Template</span>
+                                    </div>
+                                    <div class="product-card__price">
+                                        <span>19$</span>
+                                    </div>
                                 </div>
-                                <div class="product-card__stars">
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <span>(05)</span>
+                                <div class="product-card__points">
+                                    <div class="product-card__author">
+                                        <div class="product-card__circle">
+                                            5
+                                        </div>
+                                        <span>Radiustheme</span>
+                                    </div>
+                                    <div class="product-card__stars">
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <span>(05)</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="trending-products__shell">
-                    <div class="trending-products__product-card product-card">
-                        <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon">
-                                <div class="product-card__triangle">
-                                </div>
-                                <div class="product-card__light">
-                                    <i class="fa fa-bolt" aria-hidden="true"></i>
-                                </div>
-                            </label>
-                            <img class="product-card__release-img" src="img/5.jpg" alt="">
-                        </div>
-                        <div class="product-card__product-card-body">
-                            <div class="product-card__sale">
-                                <div class="product-card__text">
-                                    <span class="product-card__name">The Post Grid Pro</span>
-                                    <span class="product-card__product-description">WordPress Plugin</span>
-                                </div>
-                                <div class="product-card__price">
-                                    <span>15$</span>
-                                </div>
-                            </div>
-                            <div class="product-card__points">
-                                <div class="product-card__author">
-                                    <div class="product-card__circle">
-                                        6
+                    <div class="trending-products__shell">
+                        <div class="trending-products__product-card product-card">
+                            <div class="product-card__product-card-head">
+                                <label for="#" class="product-card__triangle-icon">
+                                    <div class="product-card__triangle">
                                     </div>
-                                    <span>PsdBosS</span>
+                                    <div class="product-card__light">
+                                        <i class="fa fa-bolt" aria-hidden="true"></i>
+                                    </div>
+                                </label>
+                                <img class="product-card__release-img" src="img/5.jpg" alt="">
+                            </div>
+                            <div class="product-card__product-card-body">
+                                <div class="product-card__sale">
+                                    <div class="product-card__text">
+                                        <span class="product-card__name">The Post Grid Pro</span>
+                                        <span class="product-card__product-description">WordPress Plugin</span>
+                                    </div>
+                                    <div class="product-card__price">
+                                        <span>15$</span>
+                                    </div>
                                 </div>
-                                <div class="product-card__stars">
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <span>(05)</span>
+                                <div class="product-card__points">
+                                    <div class="product-card__author">
+                                        <div class="product-card__circle">
+                                            6
+                                        </div>
+                                        <span>PsdBosS</span>
+                                    </div>
+                                    <div class="product-card__stars">
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <span>(05)</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="trending-products__shell">
-                    <div class="trending-products__product-card product-card">
-                        <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon">
-                                <div class="product-card__triangle">
-                                </div>
-                                <div class="product-card__light">
-                                    <i class="fa fa-bolt" aria-hidden="true"></i>
-                                </div>
-                            </label>
-                            <img class="product-card__release-img" src="img/6.jpg" alt="">
-                        </div>
-                        <div class="product-card__product-card-body">
-                            <div class="product-card__sale">
-                                <div class="product-card__text">
-                                    <span class="product-card__name">Logo Showcae</span>
-                                    <span class="product-card__product-description">Joomla Component</span>
-                                </div>
-                                <div class="product-card__price">
-                                    <span>20$</span>
-                                </div>
-                            </div>
-                            <div class="product-card__points">
-                                <div class="product-card__author">
-                                    <div class="product-card__circle">
-                                        7
+                    <div class="trending-products__shell">
+                        <div class="trending-products__product-card product-card">
+                            <div class="product-card__product-card-head">
+                                <label for="#" class="product-card__triangle-icon">
+                                    <div class="product-card__triangle">
                                     </div>
-                                    <span>Manilip</span>
+                                    <div class="product-card__light">
+                                        <i class="fa fa-bolt" aria-hidden="true"></i>
+                                    </div>
+                                </label>
+                                <img class="product-card__release-img" src="img/6.jpg" alt="">
+                            </div>
+                            <div class="product-card__product-card-body">
+                                <div class="product-card__sale">
+                                    <div class="product-card__text">
+                                        <span class="product-card__name">Logo Showcae</span>
+                                        <span class="product-card__product-description">Joomla Component</span>
+                                    </div>
+                                    <div class="product-card__price">
+                                        <span>20$</span>
+                                    </div>
                                 </div>
-                                <div class="product-card__stars">
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <span>(05)</span>
+                                <div class="product-card__points">
+                                    <div class="product-card__author">
+                                        <div class="product-card__circle">
+                                            7
+                                        </div>
+                                        <span>Manilip</span>
+                                    </div>
+                                    <div class="product-card__stars">
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <span>(05)</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="trending-products__shell">
-                    <div class="trending-products__product-card product-card">
-                        <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon">
-                                <div class="product-card__triangle">
-                                </div>
-                                <div class="product-card__light">
-                                    <i class="fa fa-bolt" aria-hidden="true"></i>
-                                </div>
-                            </label>
-                            <img class="product-card__release-img" src="img/7.jpg" alt="">
-                        </div>
-                        <div class="product-card__product-card-body">
-                            <div class="product-card__sale">
-                                <div class="product-card__text">
-                                    <span class="product-card__name">UI Design</span>
-                                    <span class="product-card__product-description">Psd Template</span>
-                                </div>
-                                <div class="product-card__price">
-                                    <span>12$</span>
-                                </div>
-                            </div>
-                            <div class="product-card__points">
-                                <div class="product-card__author">
-                                    <div class="product-card__circle">
-                                        8
+                    <div class="trending-products__shell">
+                        <div class="trending-products__product-card product-card">
+                            <div class="product-card__product-card-head">
+                                <label for="#" class="product-card__triangle-icon">
+                                    <div class="product-card__triangle">
                                     </div>
-                                    <span>Lolypop</span>
+                                    <div class="product-card__light">
+                                        <i class="fa fa-bolt" aria-hidden="true"></i>
+                                    </div>
+                                </label>
+                                <img class="product-card__release-img" src="img/7.jpg" alt="">
+                            </div>
+                            <div class="product-card__product-card-body">
+                                <div class="product-card__sale">
+                                    <div class="product-card__text">
+                                        <span class="product-card__name">UI Design</span>
+                                        <span class="product-card__product-description">Psd Template</span>
+                                    </div>
+                                    <div class="product-card__price">
+                                        <span>12$</span>
+                                    </div>
                                 </div>
-                                <div class="product-card__stars">
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <span>(05)</span>
+                                <div class="product-card__points">
+                                    <div class="product-card__author">
+                                        <div class="product-card__circle">
+                                            8
+                                        </div>
+                                        <span>Lolypop</span>
+                                    </div>
+                                    <div class="product-card__stars">
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <span>(05)</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="trending-products__shell">
-                    <div class="trending-products__product-card product-card">
-                        <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon">
-                                <div class="product-card__triangle">
-                                </div>
-                                <div class="product-card__light">
-                                    <i class="fa fa-bolt" aria-hidden="true"></i>
-                                </div>
-                            </label>
-                            <img class="product-card__release-img" src="img/4.jpg" alt="">
-                        </div>
-                        <div class="product-card__product-card-body">
-                            <div class="product-card__sale">
-                                <div class="product-card__text">
-                                    <span class="product-card__name">Responcive Template</span>
-                                    <span class="product-card__product-description">Site Template</span>
-                                </div>
-                                <div class="product-card__price">
-                                    <span>19$</span>
-                                </div>
-                            </div>
-                            <div class="product-card__points">
-                                <div class="product-card__author">
-                                    <div class="product-card__circle">
-                                        9
+                    <div class="trending-products__shell">
+                        <div class="trending-products__product-card product-card">
+                            <div class="product-card__product-card-head">
+                                <label for="#" class="product-card__triangle-icon">
+                                    <div class="product-card__triangle">
                                     </div>
-                                    <span>Radiustheme</span>
+                                    <div class="product-card__light">
+                                        <i class="fa fa-bolt" aria-hidden="true"></i>
+                                    </div>
+                                </label>
+                                <img class="product-card__release-img" src="img/4.jpg" alt="">
+                            </div>
+                            <div class="product-card__product-card-body">
+                                <div class="product-card__sale">
+                                    <div class="product-card__text">
+                                        <span class="product-card__name">Responcive Template</span>
+                                        <span class="product-card__product-description">Site Template</span>
+                                    </div>
+                                    <div class="product-card__price">
+                                        <span>19$</span>
+                                    </div>
                                 </div>
-                                <div class="product-card__stars">
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <span>(05)</span>
+                                <div class="product-card__points">
+                                    <div class="product-card__author">
+                                        <div class="product-card__circle">
+                                            9
+                                        </div>
+                                        <span>Radiustheme</span>
+                                    </div>
+                                    <div class="product-card__stars">
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <span>(05)</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="trending-products__shell">
-                    <div class="trending-products__product-card product-card">
-                        <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon">
-                                <div class="product-card__triangle">
-                                </div>
-                                <div class="product-card__light">
-                                    <i class="fa fa-bolt" aria-hidden="true"></i>
-                                </div>
-                            </label>
-                            <img class="product-card__release-img" src="img/5.jpg" alt="">
-                        </div>
-                        <div class="product-card__product-card-body">
-                            <div class="product-card__sale">
-                                <div class="product-card__text">
-                                    <span class="product-card__name">The Post Grid Pro</span>
-                                    <span class="product-card__product-description">WordPress Plugin</span>
-                                </div>
-                                <div class="product-card__price">
-                                    <span>15$</span>
-                                </div>
-                            </div>
-                            <div class="product-card__points">
-                                <div class="product-card__author">
-                                    <div class="product-card__circle">
-                                        10
+                    <div class="trending-products__shell">
+                        <div class="trending-products__product-card product-card">
+                            <div class="product-card__product-card-head">
+                                <label for="#" class="product-card__triangle-icon">
+                                    <div class="product-card__triangle">
                                     </div>
-                                    <span>PsdBosS</span>
+                                    <div class="product-card__light">
+                                        <i class="fa fa-bolt" aria-hidden="true"></i>
+                                    </div>
+                                </label>
+                                <img class="product-card__release-img" src="img/5.jpg" alt="">
+                            </div>
+                            <div class="product-card__product-card-body">
+                                <div class="product-card__sale">
+                                    <div class="product-card__text">
+                                        <span class="product-card__name">The Post Grid Pro</span>
+                                        <span class="product-card__product-description">WordPress Plugin</span>
+                                    </div>
+                                    <div class="product-card__price">
+                                        <span>15$</span>
+                                    </div>
                                 </div>
-                                <div class="product-card__stars">
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <span>(05)</span>
+                                <div class="product-card__points">
+                                    <div class="product-card__author">
+                                        <div class="product-card__circle">
+                                            10
+                                        </div>
+                                        <span>PsdBosS</span>
+                                    </div>
+                                    <div class="product-card__stars">
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <span>(05)</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="trending-products__shell">
-                    <div class="trending-products__product-card product-card">
-                        <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon">
-                                <div class="product-card__triangle">
-                                </div>
-                                <div class="product-card__light">
-                                    <i class="fa fa-bolt" aria-hidden="true"></i>
-                                </div>
-                            </label>
-                            <img class="product-card__release-img" src="img/6.jpg" alt="">
-                        </div>
-                        <div class="product-card__product-card-body">
-                            <div class="product-card__sale">
-                                <div class="product-card__text">
-                                    <span class="product-card__name">Logo Showcae</span>
-                                    <span class="product-card__product-description">Joomla Component</span>
-                                </div>
-                                <div class="product-card__price">
-                                    <span>20$</span>
-                                </div>
-                            </div>
-                            <div class="product-card__points">
-                                <div class="product-card__author">
-                                    <div class="product-card__circle">
-                                        11
+                    <div class="trending-products__shell">
+                        <div class="trending-products__product-card product-card">
+                            <div class="product-card__product-card-head">
+                                <label for="#" class="product-card__triangle-icon">
+                                    <div class="product-card__triangle">
                                     </div>
-                                    <span>Manilip</span>
+                                    <div class="product-card__light">
+                                        <i class="fa fa-bolt" aria-hidden="true"></i>
+                                    </div>
+                                </label>
+                                <img class="product-card__release-img" src="img/6.jpg" alt="">
+                            </div>
+                            <div class="product-card__product-card-body">
+                                <div class="product-card__sale">
+                                    <div class="product-card__text">
+                                        <span class="product-card__name">Logo Showcae</span>
+                                        <span class="product-card__product-description">Joomla Component</span>
+                                    </div>
+                                    <div class="product-card__price">
+                                        <span>20$</span>
+                                    </div>
                                 </div>
-                                <div class="product-card__stars">
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <span>(05)</span>
+                                <div class="product-card__points">
+                                    <div class="product-card__author">
+                                        <div class="product-card__circle">
+                                            11
+                                        </div>
+                                        <span>Manilip</span>
+                                    </div>
+                                    <div class="product-card__stars">
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <span>(05)</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="trending-products__shell">
-                    <div class="trending-products__product-card product-card">
-                        <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon">
-                                <div class="product-card__triangle">
-                                </div>
-                                <div class="product-card__light">
-                                    <i class="fa fa-bolt" aria-hidden="true"></i>
-                                </div>
-                            </label>
-                            <img class="product-card__release-img" src="img/7.jpg" alt="">
-                        </div>
-                        <div class="product-card__product-card-body">
-                            <div class="product-card__sale">
-                                <div class="product-card__text">
-                                    <span class="product-card__name">UI Design</span>
-                                    <span class="product-card__product-description">Psd Template</span>
-                                </div>
-                                <div class="product-card__price">
-                                    <span>12$</span>
-                                </div>
-                            </div>
-                            <div class="product-card__points">
-                                <div class="product-card__author">
-                                    <div class="product-card__circle">
-                                        12
+                    <div class="trending-products__shell">
+                        <div class="trending-products__product-card product-card">
+                            <div class="product-card__product-card-head">
+                                <label for="#" class="product-card__triangle-icon">
+                                    <div class="product-card__triangle">
                                     </div>
-                                    <span>Lolypop</span>
+                                    <div class="product-card__light">
+                                        <i class="fa fa-bolt" aria-hidden="true"></i>
+                                    </div>
+                                </label>
+                                <img class="product-card__release-img" src="img/7.jpg" alt="">
+                            </div>
+                            <div class="product-card__product-card-body">
+                                <div class="product-card__sale">
+                                    <div class="product-card__text">
+                                        <span class="product-card__name">UI Design</span>
+                                        <span class="product-card__product-description">Psd Template</span>
+                                    </div>
+                                    <div class="product-card__price">
+                                        <span>12$</span>
+                                    </div>
                                 </div>
-                                <div class="product-card__stars">
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <span>(05)</span>
+                                <div class="product-card__points">
+                                    <div class="product-card__author">
+                                        <div class="product-card__circle">
+                                            12
+                                        </div>
+                                        <span>Lolypop</span>
+                                    </div>
+                                    <div class="product-card__stars">
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <span>(05)</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="trending-products__shell">
-                    <div class="trending-products__product-card product-card">
-                        <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon">
-                                <div class="product-card__triangle">
-                                </div>
-                                <div class="product-card__light">
-                                    <i class="fa fa-bolt" aria-hidden="true"></i>
-                                </div>
-                            </label>
-                            <img class="product-card__release-img" src="img/4.jpg" alt="">
-                        </div>
-                        <div class="product-card__product-card-body">
-                            <div class="product-card__sale">
-                                <div class="product-card__text">
-                                    <span class="product-card__name">Responcive Template</span>
-                                    <span class="product-card__product-description">Site Template</span>
-                                </div>
-                                <div class="product-card__price">
-                                    <span>19$</span>
-                                </div>
-                            </div>
-                            <div class="product-card__points">
-                                <div class="product-card__author">
-                                    <div class="product-card__circle">
-                                        13
+                    <div class="trending-products__shell">
+                        <div class="trending-products__product-card product-card">
+                            <div class="product-card__product-card-head">
+                                <label for="#" class="product-card__triangle-icon">
+                                    <div class="product-card__triangle">
                                     </div>
-                                    <span>Radiustheme</span>
+                                    <div class="product-card__light">
+                                        <i class="fa fa-bolt" aria-hidden="true"></i>
+                                    </div>
+                                </label>
+                                <img class="product-card__release-img" src="img/4.jpg" alt="">
+                            </div>
+                            <div class="product-card__product-card-body">
+                                <div class="product-card__sale">
+                                    <div class="product-card__text">
+                                        <span class="product-card__name">Responcive Template</span>
+                                        <span class="product-card__product-description">Site Template</span>
+                                    </div>
+                                    <div class="product-card__price">
+                                        <span>19$</span>
+                                    </div>
                                 </div>
-                                <div class="product-card__stars">
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <span>(05)</span>
+                                <div class="product-card__points">
+                                    <div class="product-card__author">
+                                        <div class="product-card__circle">
+                                            13
+                                        </div>
+                                        <span>Radiustheme</span>
+                                    </div>
+                                    <div class="product-card__stars">
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <span>(05)</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="trending-products__shell">
-                    <div class="trending-products__product-card product-card">
-                        <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon">
-                                <div class="product-card__triangle">
-                                </div>
-                                <div class="product-card__light">
-                                    <i class="fa fa-bolt" aria-hidden="true"></i>
-                                </div>
-                            </label>
-                            <img class="product-card__release-img" src="img/5.jpg" alt="">
-                        </div>
-                        <div class="product-card__product-card-body">
-                            <div class="product-card__sale">
-                                <div class="product-card__text">
-                                    <span class="product-card__name">The Post Grid Pro</span>
-                                    <span class="product-card__product-description">WordPress Plugin</span>
-                                </div>
-                                <div class="product-card__price">
-                                    <span>15$</span>
-                                </div>
-                            </div>
-                            <div class="product-card__points">
-                                <div class="product-card__author">
-                                    <div class="product-card__circle">
-                                        14
+                    <div class="trending-products__shell">
+                        <div class="trending-products__product-card product-card">
+                            <div class="product-card__product-card-head">
+                                <label for="#" class="product-card__triangle-icon">
+                                    <div class="product-card__triangle">
                                     </div>
-                                    <span>PsdBosS</span>
+                                    <div class="product-card__light">
+                                        <i class="fa fa-bolt" aria-hidden="true"></i>
+                                    </div>
+                                </label>
+                                <img class="product-card__release-img" src="img/5.jpg" alt="">
+                            </div>
+                            <div class="product-card__product-card-body">
+                                <div class="product-card__sale">
+                                    <div class="product-card__text">
+                                        <span class="product-card__name">The Post Grid Pro</span>
+                                        <span class="product-card__product-description">WordPress Plugin</span>
+                                    </div>
+                                    <div class="product-card__price">
+                                        <span>15$</span>
+                                    </div>
                                 </div>
-                                <div class="product-card__stars">
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <span>(05)</span>
+                                <div class="product-card__points">
+                                    <div class="product-card__author">
+                                        <div class="product-card__circle">
+                                            14
+                                        </div>
+                                        <span>PsdBosS</span>
+                                    </div>
+                                    <div class="product-card__stars">
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <span>(05)</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="trending-products__shell">
-                    <div class="trending-products__product-card product-card">
-                        <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon">
-                                <div class="product-card__triangle">
-                                </div>
-                                <div class="product-card__light">
-                                    <i class="fa fa-bolt" aria-hidden="true"></i>
-                                </div>
-                            </label>
-                            <img class="product-card__release-img" src="img/6.jpg" alt="">
-                        </div>
-                        <div class="product-card__product-card-body">
-                            <div class="product-card__sale">
-                                <div class="product-card__text">
-                                    <span class="product-card__name">Logo Showcae</span>
-                                    <span class="product-card__product-description">Joomla Component</span>
-                                </div>
-                                <div class="product-card__price">
-                                    <span>20$</span>
-                                </div>
-                            </div>
-                            <div class="product-card__points">
-                                <div class="product-card__author">
-                                    <div class="product-card__circle">
-                                        15
+                    <div class="trending-products__shell">
+                        <div class="trending-products__product-card product-card">
+                            <div class="product-card__product-card-head">
+                                <label for="#" class="product-card__triangle-icon">
+                                    <div class="product-card__triangle">
                                     </div>
-                                    <span>Manilip</span>
+                                    <div class="product-card__light">
+                                        <i class="fa fa-bolt" aria-hidden="true"></i>
+                                    </div>
+                                </label>
+                                <img class="product-card__release-img" src="img/6.jpg" alt="">
+                            </div>
+                            <div class="product-card__product-card-body">
+                                <div class="product-card__sale">
+                                    <div class="product-card__text">
+                                        <span class="product-card__name">Logo Showcae</span>
+                                        <span class="product-card__product-description">Joomla Component</span>
+                                    </div>
+                                    <div class="product-card__price">
+                                        <span>20$</span>
+                                    </div>
                                 </div>
-                                <div class="product-card__stars">
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <span>(05)</span>
+                                <div class="product-card__points">
+                                    <div class="product-card__author">
+                                        <div class="product-card__circle">
+                                            15
+                                        </div>
+                                        <span>Manilip</span>
+                                    </div>
+                                    <div class="product-card__stars">
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <span>(05)</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="trending-products__shell">
-                    <div class="trending-products__product-card product-card">
-                        <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon">
-                                <div class="product-card__triangle">
-                                </div>
-                                <div class="product-card__light">
-                                    <i class="fa fa-bolt" aria-hidden="true"></i>
-                                </div>
-                            </label>
-                            <img class="product-card__release-img" src="img/7.jpg" alt="">
-                        </div>
-                        <div class="product-card__product-card-body">
-                            <div class="product-card__sale">
-                                <div class="product-card__text">
-                                    <span class="product-card__name">UI Design</span>
-                                    <span class="product-card__product-description">Psd Template</span>
-                                </div>
-                                <div class="product-card__price">
-                                    <span>12$</span>
-                                </div>
-                            </div>
-                            <div class="product-card__points">
-                                <div class="product-card__author">
-                                    <div class="product-card__circle">
-                                        16
+                    <div class="trending-products__shell">
+                        <div class="trending-products__product-card product-card">
+                            <div class="product-card__product-card-head">
+                                <label for="#" class="product-card__triangle-icon">
+                                    <div class="product-card__triangle">
                                     </div>
-                                    <span>Lolypop</span>
+                                    <div class="product-card__light">
+                                        <i class="fa fa-bolt" aria-hidden="true"></i>
+                                    </div>
+                                </label>
+                                <img class="product-card__release-img" src="img/7.jpg" alt="">
+                            </div>
+                            <div class="product-card__product-card-body">
+                                <div class="product-card__sale">
+                                    <div class="product-card__text">
+                                        <span class="product-card__name">UI Design</span>
+                                        <span class="product-card__product-description">Psd Template</span>
+                                    </div>
+                                    <div class="product-card__price">
+                                        <span>12$</span>
+                                    </div>
                                 </div>
-                                <div class="product-card__stars">
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
-                                    <span>(05)</span>
+                                <div class="product-card__points">
+                                    <div class="product-card__author">
+                                        <div class="product-card__circle">
+                                            16
+                                        </div>
+                                        <span>Lolypop</span>
+                                    </div>
+                                    <div class="product-card__stars">
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <i class="fa fa-star product-card__icon-stars" aria-hidden="true"></i>
+                                        <span>(05)</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- section trending products end -->
-
-</div>
-<!-- main end -->
+        </section>
+        <!-- section trending products end -->
+    </div>
+    <!-- main end -->
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -844,8 +864,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- JQuery UI -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <!-- font awesome -->  
-    <script src="https://kit.fontawesome.com/936a744753.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/936a744753.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
 </body>
