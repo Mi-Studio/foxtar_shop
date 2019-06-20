@@ -16,41 +16,76 @@
     <!-- /#header -->
     <header class="header">
         <div class="header__bg">
-          <div class="header__logo">
-            <a href="#">
-              <img class="logo-element" src="img/logo.png" alt="">
-            </a>
-          </div>
-          <div class="header__elements">
-            <div class="header__info info">
-              <span class="info__help">Need help ? </span>
-              <span class="info__talk">Talk to an expert: +61 3 8376 6284</span>
+            <div class="header__logo">
+                <a href="#">
+                    <img class="logo-element" src="img/logo.png" alt="">
+                </a>
             </div>
-            <div class="header__icons">
-              <div class="header__basket">
-                <button class="header__basket-button button">
-                    <i class="fas fa-shopping-cart"></i>
-                  <span class="button__counter-basket">8</span>
-                </button>
-              </div>
+            <div class="header__elements">
+                <div class="header__info info">
+                    <span class="info__help">Need help ? </span>
+                    <span class="info__talk">Talk to an expert: +61 3 8376 6284</span>
+                </div>
+                <div class="header__icons">
+                    <div class="header__basket basket">
+                        <div class="dropdown dropdown-menu-right">
+                            <button class="basket__basket-button button" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="basket__counter-basket">8</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                <div class="card-section">
+                                    <div class="square"></div>
+                                    <div class="card-text">
+                                        <p class="product">Grand Ballet</p>
+                                        <p class="description">Word Press</p>
+                                        <p class="price">$59</p>
+                                    </div>
+                                </div>
+                                <div class="card-section">
+                                    <div class="square"></div>
+                                    <div class="card-text">
+                                        <p class="product">Apple Device</p>
+                                        <p class="description">Word Press</p>
+                                        <p class="price">$59</p>
+                                    </div>
+                                </div>
+                                <div class="card-section-total">
+                                    <div class="card-text-total">
+                                        <span class="total">Total</span>
+                                        <span>$118</span>
+                                    </div>
+                                    <div class="dropdown-button">
+                                        <button type="button" class="header__button-card">
+                                            Go To Card
+                                        </button>
+                                        <button class="header__button-checkout">
+                                            Go To Checkout
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__button-group">
+                    <div>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="header__button-login" data-toggle="modal"
+                            data-target="#exampleModal">
+                            Login
+                        </button>
+                    </div>
+                    <div class="header__register">
+                        <button class="header__register-button">
+                            Register
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="header__button-group">
-              <div>
-              <!-- Button trigger modal -->
-              <button type="button" class="header__button-login" data-toggle="modal" data-target="#exampleModal">
-                Login
-              </button>
-            </div>
-            <div class="header__register">
-              <button class="header__register-button">
-                Register
-              </button>
-            </div>
-          </div>
-          </div>
-        </div>    
-      </header>    
-      <!-- /#header -->
+        </div>
+    </header>
 
     <section class="menu">
         <div class="container">
@@ -67,28 +102,28 @@
         </div>
     </section>
 
-        <section class="poster">
-            <div class="poster__bg">
-            </div>
-            <div class="poster__mask">
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="poster__content col col-9">
-                        <div class="poster__title">Магазин спортивных товаров Foxtar</div>
-                        <div class="poster__description">
-                            <p>Воспользуйтесь поиском, чтобы найти необходимое...</p>
-                        </div>
-                        <form class="poster__form" action="" method="get">
-                            <input name="s" placeholder="Введите ключевые слова для поиска..." type="search">
-                            <button type="submit"><i class="fas fa-search"></i></button>
-                        </form>
+    <section class="poster">
+        <div class="poster__bg">
+        </div>
+        <div class="poster__mask">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="poster__content col col-9">
+                    <div class="poster__title">Магазин спортивных товаров Foxtar</div>
+                    <div class="poster__description">
+                        <p>Воспользуйтесь поиском, чтобы найти необходимое...</p>
                     </div>
+                    <form class="poster__form" action="" method="get">
+                        <input name="s" placeholder="Введите ключевые слова для поиска..." type="search">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
                 </div>
             </div>
-        </section>
-    
-        <!-- section trending products -->
+        </div>
+    </section>
+
+    <!-- section trending products -->
     <section class="trending-products">
         <div class="trending-products__container-fluid">
             <h1 class=" trending-products__title-blue">
@@ -98,11 +133,13 @@
                 <div class="trending-products__shell">
                     <div class="trending-products__product-card product-card">
                         <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon"><div class="product-card__triangle">
-                            </div>
-                            <div class="product-card__light">
-                                <i class="fa fa-bolt" aria-hidden="true"></i>
-                            </div></label>
+                            <label for="#" class="product-card__triangle-icon">
+                                <div class="product-card__triangle">
+                                </div>
+                                <div class="product-card__light">
+                                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                                </div>
+                            </label>
                             <img class="product-card__release-img" src="img/4.jpg" alt="">
                         </div>
                         <div class="product-card__product-card-body">
@@ -137,11 +174,13 @@
                 <div class="trending-products__shell">
                     <div class="trending-products__product-card product-card">
                         <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon"><div class="product-card__triangle">
-                            </div>
-                            <div class="product-card__light">
-                                <i class="fa fa-bolt" aria-hidden="true"></i>
-                            </div></label>
+                            <label for="#" class="product-card__triangle-icon">
+                                <div class="product-card__triangle">
+                                </div>
+                                <div class="product-card__light">
+                                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                                </div>
+                            </label>
                             <img class="product-card__release-img" src="img/5.jpg" alt="">
                         </div>
                         <div class="product-card__product-card-body">
@@ -176,11 +215,13 @@
                 <div class="trending-products__shell">
                     <div class="trending-products__product-card product-card">
                         <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon"><div class="product-card__triangle">
-                            </div>
-                            <div class="product-card__light">
-                                <i class="fa fa-bolt" aria-hidden="true"></i>
-                            </div></label>
+                            <label for="#" class="product-card__triangle-icon">
+                                <div class="product-card__triangle">
+                                </div>
+                                <div class="product-card__light">
+                                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                                </div>
+                            </label>
                             <img class="product-card__release-img" src="img/6.jpg" alt="">
                         </div>
                         <div class="product-card__product-card-body">
@@ -215,11 +256,13 @@
                 <div class="trending-products__shell">
                     <div class="trending-products__product-card product-card">
                         <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon"><div class="product-card__triangle">
-                            </div>
-                            <div class="product-card__light">
-                                <i class="fa fa-bolt" aria-hidden="true"></i>
-                            </div></label>
+                            <label for="#" class="product-card__triangle-icon">
+                                <div class="product-card__triangle">
+                                </div>
+                                <div class="product-card__light">
+                                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                                </div>
+                            </label>
                             <img class="product-card__release-img" src="img/7.jpg" alt="">
                         </div>
                         <div class="product-card__product-card-body">
@@ -254,11 +297,13 @@
                 <div class="trending-products__shell">
                     <div class="trending-products__product-card product-card">
                         <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon"><div class="product-card__triangle">
-                            </div>
-                            <div class="product-card__light">
-                                <i class="fa fa-bolt" aria-hidden="true"></i>
-                            </div></label>
+                            <label for="#" class="product-card__triangle-icon">
+                                <div class="product-card__triangle">
+                                </div>
+                                <div class="product-card__light">
+                                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                                </div>
+                            </label>
                             <img class="product-card__release-img" src="img/4.jpg" alt="">
                         </div>
                         <div class="product-card__product-card-body">
@@ -293,11 +338,13 @@
                 <div class="trending-products__shell">
                     <div class="trending-products__product-card product-card">
                         <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon"><div class="product-card__triangle">
-                            </div>
-                            <div class="product-card__light">
-                                <i class="fa fa-bolt" aria-hidden="true"></i>
-                            </div></label>
+                            <label for="#" class="product-card__triangle-icon">
+                                <div class="product-card__triangle">
+                                </div>
+                                <div class="product-card__light">
+                                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                                </div>
+                            </label>
                             <img class="product-card__release-img" src="img/5.jpg" alt="">
                         </div>
                         <div class="product-card__product-card-body">
@@ -332,11 +379,13 @@
                 <div class="trending-products__shell">
                     <div class="trending-products__product-card product-card">
                         <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon"><div class="product-card__triangle">
-                            </div>
-                            <div class="product-card__light">
-                                <i class="fa fa-bolt" aria-hidden="true"></i>
-                            </div></label>
+                            <label for="#" class="product-card__triangle-icon">
+                                <div class="product-card__triangle">
+                                </div>
+                                <div class="product-card__light">
+                                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                                </div>
+                            </label>
                             <img class="product-card__release-img" src="img/6.jpg" alt="">
                         </div>
                         <div class="product-card__product-card-body">
@@ -371,11 +420,13 @@
                 <div class="trending-products__shell">
                     <div class="trending-products__product-card product-card">
                         <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon"><div class="product-card__triangle">
-                            </div>
-                            <div class="product-card__light">
-                                <i class="fa fa-bolt" aria-hidden="true"></i>
-                            </div></label>
+                            <label for="#" class="product-card__triangle-icon">
+                                <div class="product-card__triangle">
+                                </div>
+                                <div class="product-card__light">
+                                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                                </div>
+                            </label>
                             <img class="product-card__release-img" src="img/7.jpg" alt="">
                         </div>
                         <div class="product-card__product-card-body">
@@ -410,11 +461,13 @@
                 <div class="trending-products__shell">
                     <div class="trending-products__product-card product-card">
                         <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon"><div class="product-card__triangle">
-                            </div>
-                            <div class="product-card__light">
-                                <i class="fa fa-bolt" aria-hidden="true"></i>
-                            </div></label>
+                            <label for="#" class="product-card__triangle-icon">
+                                <div class="product-card__triangle">
+                                </div>
+                                <div class="product-card__light">
+                                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                                </div>
+                            </label>
                             <img class="product-card__release-img" src="img/4.jpg" alt="">
                         </div>
                         <div class="product-card__product-card-body">
@@ -449,11 +502,13 @@
                 <div class="trending-products__shell">
                     <div class="trending-products__product-card product-card">
                         <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon"><div class="product-card__triangle">
-                            </div>
-                            <div class="product-card__light">
-                                <i class="fa fa-bolt" aria-hidden="true"></i>
-                            </div></label>
+                            <label for="#" class="product-card__triangle-icon">
+                                <div class="product-card__triangle">
+                                </div>
+                                <div class="product-card__light">
+                                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                                </div>
+                            </label>
                             <img class="product-card__release-img" src="img/5.jpg" alt="">
                         </div>
                         <div class="product-card__product-card-body">
@@ -488,11 +543,13 @@
                 <div class="trending-products__shell">
                     <div class="trending-products__product-card product-card">
                         <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon"><div class="product-card__triangle">
-                            </div>
-                            <div class="product-card__light">
-                                <i class="fa fa-bolt" aria-hidden="true"></i>
-                            </div></label>
+                            <label for="#" class="product-card__triangle-icon">
+                                <div class="product-card__triangle">
+                                </div>
+                                <div class="product-card__light">
+                                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                                </div>
+                            </label>
                             <img class="product-card__release-img" src="img/6.jpg" alt="">
                         </div>
                         <div class="product-card__product-card-body">
@@ -527,11 +584,13 @@
                 <div class="trending-products__shell">
                     <div class="trending-products__product-card product-card">
                         <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon"><div class="product-card__triangle">
-                            </div>
-                            <div class="product-card__light">
-                                <i class="fa fa-bolt" aria-hidden="true"></i>
-                            </div></label>
+                            <label for="#" class="product-card__triangle-icon">
+                                <div class="product-card__triangle">
+                                </div>
+                                <div class="product-card__light">
+                                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                                </div>
+                            </label>
                             <img class="product-card__release-img" src="img/7.jpg" alt="">
                         </div>
                         <div class="product-card__product-card-body">
@@ -566,11 +625,13 @@
                 <div class="trending-products__shell">
                     <div class="trending-products__product-card product-card">
                         <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon"><div class="product-card__triangle">
-                            </div>
-                            <div class="product-card__light">
-                                <i class="fa fa-bolt" aria-hidden="true"></i>
-                            </div></label>
+                            <label for="#" class="product-card__triangle-icon">
+                                <div class="product-card__triangle">
+                                </div>
+                                <div class="product-card__light">
+                                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                                </div>
+                            </label>
                             <img class="product-card__release-img" src="img/4.jpg" alt="">
                         </div>
                         <div class="product-card__product-card-body">
@@ -605,11 +666,13 @@
                 <div class="trending-products__shell">
                     <div class="trending-products__product-card product-card">
                         <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon"><div class="product-card__triangle">
-                            </div>
-                            <div class="product-card__light">
-                                <i class="fa fa-bolt" aria-hidden="true"></i>
-                            </div></label>
+                            <label for="#" class="product-card__triangle-icon">
+                                <div class="product-card__triangle">
+                                </div>
+                                <div class="product-card__light">
+                                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                                </div>
+                            </label>
                             <img class="product-card__release-img" src="img/5.jpg" alt="">
                         </div>
                         <div class="product-card__product-card-body">
@@ -644,11 +707,13 @@
                 <div class="trending-products__shell">
                     <div class="trending-products__product-card product-card">
                         <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon"><div class="product-card__triangle">
-                            </div>
-                            <div class="product-card__light">
-                                <i class="fa fa-bolt" aria-hidden="true"></i>
-                            </div></label>
+                            <label for="#" class="product-card__triangle-icon">
+                                <div class="product-card__triangle">
+                                </div>
+                                <div class="product-card__light">
+                                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                                </div>
+                            </label>
                             <img class="product-card__release-img" src="img/6.jpg" alt="">
                         </div>
                         <div class="product-card__product-card-body">
@@ -683,11 +748,13 @@
                 <div class="trending-products__shell">
                     <div class="trending-products__product-card product-card">
                         <div class="product-card__product-card-head">
-                            <label for="#" class="product-card__triangle-icon"><div class="product-card__triangle">
-                            </div>
-                            <div class="product-card__light">
-                                <i class="fa fa-bolt" aria-hidden="true"></i>
-                            </div></label>
+                            <label for="#" class="product-card__triangle-icon">
+                                <div class="product-card__triangle">
+                                </div>
+                                <div class="product-card__light">
+                                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                                </div>
+                            </label>
                             <img class="product-card__release-img" src="img/7.jpg" alt="">
                         </div>
                         <div class="product-card__product-card-body">
@@ -722,13 +789,11 @@
             </div>
         </div>
     </section>
-    
-</div>
     <!-- section trending products end -->
 
     <!-- section why choose start -->
     <section class="why-you-choose">
-        <section class="why-you-choose__container">
+        <div class="why-you-choose__container">
             <h3 class="why-you-choose__title">Why You Choose Foxtar Market Place</h3>
             <div class="why-you-choose__card-container">
                 <div class="why-you-choose__why-choose-card why-choose-card">
@@ -736,9 +801,10 @@
                         <img class="why-choose-card__cirkle" src="img/1.jpg" alt="">
                     </div>
                     <a class="why-choose-card__card-text" href="#">
-                            Easily Buy & Sell
+                        Easily Buy & Sell
                     </a>
-                    <span class="why-choose-card__card-description">Dorem Ipsum is simply dummy text of the pring and typesetting
+                    <span class="why-choose-card__card-description">Dorem Ipsum is simply dummy text of the pring and
+                        typesetting
                         industry. Lorem Ipsum has been the industry's
                         standaum.
                     </span>
@@ -747,11 +813,11 @@
                     <div class="why-choose-card__round-img">
                         <img class="why-choose-card__cirkle" src="img/2.jpg" alt="">
                     </div>
-                    <a 
-                    href="#" class="why-choose-card__card-text">
+                    <a href="#" class="why-choose-card__card-text">
                         Quality Products
                     </a>
-                    <span class="why-choose-card__card-description">Dorem Ipsum is simply dummy text of the pring and typesetting
+                    <span class="why-choose-card__card-description">Dorem Ipsum is simply dummy text of the pring and
+                        typesetting
                         industry. Lorem Ipsum has been the industry's
                         standaum.
                     </span>
@@ -763,55 +829,59 @@
                     <a href="#" class="why-choose-card__card-text">
                         100% Secure Paymant
                     </a>
-                    <span class="why-choose-card__card-description">Dorem Ipsum is simply dummy text of the pring and typesetting
+                    <span class="why-choose-card__card-description">Dorem Ipsum is simply dummy text of the pring and
+                        typesetting
                         industry. Lorem Ipsum has been the industry's
                         standaum.
                     </span>
                 </div>
             </div>
-        </section>
-    
-    <!-- section why choose end -->
-    
-        
-    </div>
-
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">LOGIN</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
         </div>
-        <div class="modal-body">
-          <form action="#" class="modal__form">
-            <div class="modal-name"> <i class="fas fa-user"></i>
-              <input class="modal-input" type="name" placeholder="Name">
+    </section>
+    <!-- section why choose end -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">LOGIN</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" class="modal__form">
+                        <div class="modal-name"> <i class="fas fa-user"></i>
+                            <input class="modal-input" type="name" placeholder="Name">
+                        </div>
+                        <div class="modal-password"> <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn-submit">SUBMIT</button>
+                        <button type="button" class="button-account"> <i class="fas fa-edit"></i> Create An
+                            account?</button>
+                    </form>
+                    <a href="#" class="lost-pass">Lost Password? </a>
+                </div>
             </div>
-            <div class="modal-password"> <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password">
-            </div>
-            <button type="submit" class="btn-submit">SUBMIT</button>
-            <button type="button" class="button-account"> <i class="fas fa-edit"></i> Create An account?</button>
-          </form>
-          <a href="#" class="lost-pass">Lost Password? </a>
-      </div>
-      </div>
+        </div>
     </div>
-  </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- JQuery UI -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
     <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/936a744753.js"></script> 
+    <script src="https://kit.fontawesome.com/936a744753.js"></script>
     <!-- libs -->
     <script src="js/libs.min.js"></script>
     <!-- main -->
     <script src="js/main.js"></script>
 </body>
+
 </html>
