@@ -1,4 +1,6 @@
 $( function() {
+
+  if ($('.trending-products__product-container').length){    
     $('.trending-products__product-container').slick({
         autoplay: true,
         autoplaySpeed: 2000,
@@ -36,7 +38,11 @@ $( function() {
           
         ]
       });
+    };
+
+    if ($('.product-tabs').length){
       $( '.product-tabs' ).tabs();
+    };
 
 
 });
