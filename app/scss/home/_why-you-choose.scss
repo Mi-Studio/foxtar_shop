@@ -1,0 +1,61 @@
+.why-you-choose {
+  background-color: #263238;
+  padding: 125px 0;
+  
+  &__container {
+      max-width: 1170px;
+      padding: 0 15px;
+      margin: 0 auto;
+  }
+
+  &__title {
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 80px;
+  }
+
+  &__card-container {
+      font-size: 0px;
+  }
+}
+.why-choose-card {
+      width: calc(100%/3);
+      display: inline-block;
+      text-align: center;
+      padding: 0 0;
+
+  &__round-img {
+      border-radius: 50%; 
+      border: 3px solid lightgray;
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 32px;
+      z-index: 1000000;
+  }
+
+  &__card-text {
+      font-size: 21px;
+      padding-bottom: 32px;
+      display: inline-block;
+      color: #ffffff;
+  }
+
+  &__card-description {
+      font-size: 12px;
+      color: #a7b5bc;
+      display: block;
+      text-align: center;
+      padding: 0 50px;
+  }
+
+  &__cirkle {
+      border-radius: 50%;
+  }
+
+  &__card-text:hover {
+      color: #8bc34a;
+      cursor: pointer;
+  }
+}

@@ -221,12 +221,15 @@ input {
     left: 164px;
     background-color: #ffffff;
     color: #000000;
-    font-family: Roboto;
     font-size: 14px;
     font-weight: 700;
     line-height: 30px;
     text-transform: uppercase;
     box-shadow: 0 2px 2px rgba(118, 174, 54, 0.75);
+}
+
+.modal-title {
+    font-family: 'roboto', sans-serif; 
 }
 
 .modal-pencil {
