@@ -1,0 +1,43 @@
+@media only screen and (max-width: 992px) {
+    .product-card {
+        border: 1px solid lightgray;
+        width: 100%;
+        position: relative;
+    
+  
+    
+    &__product-card-body {
+        font-size: 12px;
+        font-weight: bold;
+        color: $dark-green;
+        background-color: #fff;
+    }
+    
+    &__product-description {
+        font-size: 10px;
+        color: $lightgreen;
+    }
+    
+    &__points {
+        border-top: 1px solid lightgray;
+        font-size: 8px;
+        display: flex;
+        align-items: center;
+        padding: 10px 15px;
+    }
+}
+}
+
+@media only screen and (max-width: 768px) {
+
+    .trending-products{
+        padding: 125px 0;
+
+        &__shell {
+            width: calc(100%/2);
+            display: inline-block;
+            padding: 0px 15px;
+        }
+    }
+
+}
