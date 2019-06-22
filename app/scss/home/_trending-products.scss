@@ -1,0 +1,74 @@
+/* trending products */
+.trending-products{
+    padding: 125px 0;
+
+    &__container-fluid {
+        padding: 0 15px;
+    }
+
+    &__title-blue {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        color: #263238;
+        margin-bottom: 30px;
+    }
+
+    &__product-container {
+        font-size: 0px;
+    }
+    &__shell {
+        width: calc(100%/4);
+        display: inline-block;
+        padding: 0px 15px;
+    }
+}
+
+
+.slick-dots {
+	position: absolute;
+	bottom: -50px;
+	left: 50%;
+	transform: translateX(-50%);
+	line-height: 0;
+}
+
+.slick-dots li {
+	display: inline-block;
+	vertical-align: center;
+	position: relative;
+	width: 18px;
+	height: 18px;
+}
+
+.slick-dots li button {
+	width: 12px;
+	height: 12px;
+	color: transparent;
+	font-size: 0;
+	background-color: #ccc;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.slick-dots li button::after {
+	content: '';
+	width: 12px;
+	height: 12px;
+	background-color: #8bc34a;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	box-sizing: border-box;
+}
+
+.slick-dots li.slick-active button {
+    background-color: $lightgreen;
+}
+/* tranding products end */
