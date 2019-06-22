@@ -332,3 +332,6 @@ ASALocalRun/
 
 # develop
 app/css/main.min.css
+
+# mac
+**/*.DS_Store
