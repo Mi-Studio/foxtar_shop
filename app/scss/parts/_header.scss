@@ -285,7 +285,8 @@
         border: 1px solid #cccccc;
         background-color: #ffffff;
         vertical-align: middle;
-        margin: 31px 0px 0px -38px;
+        margin: 30px 0px 0px -38px;
+        
     }
 
     .header__icons>.header__basket>.dropdown>.dropdown-menu {
@@ -295,7 +296,7 @@
         border: 1px solid #cccccc;
         background-color: #ffffff;
         vertical-align: middle;
-        
+        margin-top: 40px;
     }
 
     .header__icons>.header__mail>.dropdown>.dropdown-menu {
@@ -306,6 +307,7 @@
         background-color: #ffffff;
         vertical-align: middle;
         padding: 0rem 0;
+        margin-top: 40px;
     }
 
     .header__icons>.header__bell>.dropdown>.dropdown-menu {
@@ -316,6 +318,7 @@
         background-color: #ffffff;
         vertical-align: middle;
         padding: 0rem 0;
+        margin-top: 40px;
     }
 
     .square {
@@ -486,33 +489,23 @@
     /* ========== Drop down end ========== */
 
 
-    /* desctop */
-    @media (min-width: 975px) {
-        .dropdown-menu {
-            margin-top: 40px;
-        }
-    }
-    
+
     /* tablet */
-    @media (min-width: 576px) and (max-width: 975px) {
-        .dropdown-menu {
-            margin-top: 40px;
+    @media (max-width: 992px) {
+
+        .header__info {
+            white-space: nowrap;
+            
         }
     }
+
 
     /* phone */
     @media (max-width: 576px) {
 
-        .header__elements {
-            flex-direction: column;
-        }
-
-        .header__bg {
-            flex-direction: column;
-        }
-
         .header__info {
-            order: 1;
+            display: none;
+            white-space: nowrap;
         }
         .modal-dialog {
             max-width: 419px;
@@ -522,21 +515,10 @@
             left: 14px;
         }
 
-        .dropdown-menu {
-            margin-top: 113px;
-        }
-
-        .header__logo {
-            margin-bottom: 10px;
-        }
-
-        .header__button-group>.dropdown>.dropdown-menu {
-            margin-top: 54px;
+        .header__button-group>.dropdown {
+            display: none;
         }
         
-        .header__icons {
-            margin-bottom: 10px;
-        }
     }
 
 }  
