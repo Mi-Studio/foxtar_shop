@@ -52,51 +52,117 @@
     }
 
     &__form {
-            position: relative;
-            width: 670px;
-            box-shadow: 0 1px 10px rgba(124, 178, 64, 0.75);
-            background-color: #ffffff;
-            border-radius: 3px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+        position: relative;
+        max-width: 670px;
+        box-shadow: 0 1px 10px rgba(124, 178, 64, 0.75);
+        background-color: #ffffff;
+        border-radius: 3px;
+        margin: 0 auto;
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: space-between;
+        font-size: 0;
+        letter-spacing: 0;
 
-        input {
-            font-family: 'Roboto', sans-serif;
-            color: #90a4ae;
-            letter-spacing: 0.7px;
-            padding: 22px 0 22px 25px;
-            flex-grow: 1;
-            border-radius: 5px;
-            }
-
-        input::placeholder {
-                color: #90a4ae; 
-            }
-
-        button {
-                position: absolute; 
-                top: 0;
-                right: 0px;
-                width: 57px;
-                height: 68px;
-                border: none;
-                border-radius: 0 5px 5px 0;
-                cursor: pointer;
-                background-color: transparent;
-
-        .fa-search {
-            font-size: 16px;
-            color: #78909c;
+    input {
+        font-family: 'Roboto', sans-serif;
+        color: #90a4ae;
+        letter-spacing: 0.7px;
+        padding: 10px 5px 10px 25px;
+        width: calc(100% - 57px);
+        // flex-grow: 1;
+        border-radius: 5px;
+        display: inline-block;
+        vertical-align: middle;
+        height: 56px;
+        font-size: 14px;
         }
 
+    input::placeholder {
+            font-size: 14px;
+            color: #90a4ae; 
         }
-            
+
+    button {
+            width: 57px;
+            height: 55px;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            background-color: transparent;
+            display: inline-block;
+            vertical-align: middle;
+    
+            .fa-search {
+                font-size: 16px;
+                color: #78909c;
+            }
+
     }
+        
+}
 }
 
 .poster_bg-small {
-    height: 289px;
-    background-position: 50% 25%;
+height: 289px;
+background-position: 50% 25%;
 } 
+
+@media (max-width: 992px) {
+
+.poster {
+
+    &__bg {
+        height: 430px;
+    }
+
+    &__content {
+        top: 45%;
+    }
+
+    &__title {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    &__form {
+        max-width: 615px;
+    }
+}
+
+}
+
+@media (max-width: 576px) {
+
+.poster {
+
+    &__content {
+        top: 51%;
+    }
+
+    &__title {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    &__description {
+        font-size: 16px;
+        padding: 36px 0 25px;
+    }
+
+    &__form {
+        max-width: 320px;
+
+        input {
+            letter-spacing: 0.7px;
+            padding: 15px 10px 15px 25px;
+        }
+
+        input::placeholder {
+            font-size: 12px;
+        }
+
+
+    }
+}
+}
