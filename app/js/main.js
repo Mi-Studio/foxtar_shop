@@ -46,7 +46,12 @@ $( function() {
             max: 600,
             prefix: "$"
         });
-    };
+    }
+
+    $('.js-slick').slicknav({
+        appendTo: '.menu',
+        label:''
+    });
 
     if ($(".product-tabs").length) {
         $( '.product-tabs' ).tabs();
