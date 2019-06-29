@@ -24,5 +24,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Maks Buryi",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mi-Studio/foxtar_shop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mi-Studio/foxtar_shop/issues"
+  },
+  "homepage": "https://github.com/Mi-Studio/foxtar_shop#readme"
 }
