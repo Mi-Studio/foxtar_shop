@@ -14,7 +14,7 @@
     &__button-login {
         border: none;
         border-radius: 3px;
-        width: 72px;
+        max-width: 72px;
         height: 32px;
         color: white;
         background-color: $lightgreen;
@@ -23,7 +23,7 @@
         &__register-button {
         border: none;
         border-radius: 3px;
-        width: 72px;
+        max-width: 72px;
         height: 32px;
         color: white;
         background-color: $red;
@@ -497,6 +497,14 @@
             white-space: nowrap;
             
         }
+
+        .header__logo {
+            margin-left: 20px;
+        }
+
+        .header__elements {
+            margin-right: 20px;
+        }
     }
 
 
@@ -519,6 +527,14 @@
             display: none;
         }
         
+        .header__logo {
+            margin-left: 20px;
+        }
+
+        .header__elements {
+            margin-right: 20px;
+        }
+
     }
 
 }  
