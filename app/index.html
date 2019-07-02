@@ -13,80 +13,106 @@
 
 <body>
 
-    <!-- /#header -->
-    <header class="header">
-        <div class="header__bg">
-            <div class="header__logo">
-                <a href="#">
-                    <img class="logo-element" src="img/logo.png" alt="">
-                </a>
-            </div>
-            <div class="header__elements">
-                <div class="header__info info">
-                    <span class="info__help">Need help ? </span>
-                    <span class="info__talk">Talk to an expert: +61 3 8376 6284</span>
-                </div>
-                <div class="header__icons">
-                    <div class="header__basket basket">
-                        <div class="dropdown dropdown-menu-right">
-                            <button class="basket__basket-button button" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-shopping-cart"></i>
-                                <span class="basket__counter-basket">8</span>
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                <div class="card-section">
-                                    <div class="square"></div>
-                                    <div class="card-text">
-                                        <p class="product">Grand Ballet</p>
-                                        <p class="description">Word Press</p>
-                                        <p class="price">$59</p>
-                                    </div>
-                                </div>
-                                <div class="card-section">
-                                    <div class="square"></div>
-                                    <div class="card-text">
-                                        <p class="product">Apple Device</p>
-                                        <p class="description">Word Press</p>
-                                        <p class="price">$59</p>
-                                    </div>
-                                </div>
-                                <div class="card-section-total">
-                                    <div class="card-text-total">
-                                        <span class="total">Total</span>
-                                        <span>$118</span>
-                                    </div>
-                                    <div class="dropdown-button">
-                                        <button type="button" class="header__button-card">
-                                            Go To Card
-                                        </button>
-                                        <button class="header__button-checkout">
-                                            Go To Checkout
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+  <!-- /#header -->
+
+  <header class="header">
+    <div class="header__bg">
+      <div class="header__logo">
+        <a href="#">
+          <img class="logo-element" src="img/logo.png" alt="">
+        </a>
+      </div>
+      <div class="header__elements">
+        <div class="header__info info">
+          <span class="info__help">Need help ? </span>
+          <span class="info__talk">Talk to an expert: +61 3 8376 6284</span>
+        </div>
+        <div class="header__icons">
+          <div class="header__basket basket">
+              <div class="dropdown">
+                <button class="basket__basket-button button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-shopping-cart"></i>
+                  <span class="basket__counter-basket">8</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <div class="card-section">
+                      <div class="square"></div>
+                      <div class="card-text">
+                          <p  class="product">Grand Ballet</p>
+                          <p class="description">Word Press</p>
+                          <p class="price">$59</p>
+                      </div>
+                    </div>
+                    <div class="card-section">
+                        <div class="square"></div>
+                        <div class="card-text">
+                          <p class="product">Apple Device</p>
+                          <p class="description">Word Press</p>
+                          <p class="price">$59</p>
                         </div>
                     </div>
-                </div>
-                <div class="header__button-group">
-                    <div>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="header__button-login" data-toggle="modal"
-                            data-target="#exampleModal">
-                            Login
-                        </button>
+                    <div class="card-section-total">
+                      <div class="card-text-total">
+                        <span class="total">Total</span>
+                        <span>$118</span>
+                      </div>
+                      <div class="dropdown-button">
+                          <button type="button" class="header__button-card">
+                              Go To Card
+                          </button>
+                          <button class="header__button-checkout">
+                              Go To Checkout
+                          </button>
+                      </div>
                     </div>
-                    <div class="header__register">
-                        <button class="header__register-button">
-                            Register
-                        </button>
-                    </div>
                 </div>
-            </div>
+              </div>
+          </div>
         </div>
-    </header>
-    <!-- /#header -->
+        <div class="header__button-group">
+          <div>
+          <!-- Button trigger modal -->
+          <button type="button" class="header__button-login" data-toggle="modal" data-target="#exampleModal">
+            Login
+          </button>
+        </div>
+        <div class="header__register">
+          <button class="header__register-button">
+            Register
+          </button>
+        </div>
+      </div>
+      </div>
+    </div>
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+ aria-hidden="true">
+ <div class="modal-dialog" role="document">
+   <div class="modal-content">
+     <div class="modal-header">
+       <h5 class="modal-title">LOGIN</h5>
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+       </button>
+     </div>
+     <div class="modal-body">
+       <form action="#" class="modal__form">
+         <div class="modal-name"> <i class="fas fa-user"></i>
+           <input class="modal-input" type="name" placeholder="Name">
+         </div>
+         <div class="modal-password"> <i class="fas fa-lock"></i>
+           <input type="password" placeholder="Password">
+         </div>
+         <button type="submit" class="btn-submit">SUBMIT</button>
+         <button type="button" class="button-account"> <i class="fas fa-edit"></i> Create An account?</button>
+       </form>
+       <a href="#" class="lost-pass">Lost Password? </a>
+   </div>
+   </div>
+ </div>
+</div>
+  </header>
+  <!-- /#header -->
 
     <section class="menu">
         <div class="container">
@@ -1533,6 +1559,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- JQuery UI -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/936a744753.js"></script>
     <script src="js/libs.min.js"></script>
